@@ -1,0 +1,28 @@
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+          @content;
+      }
+  }
+}
+
+// provides specific stylings for mobile breakpoint
+@mixin mobile {
+  @include breakpoint('mobile') {
+      @content;
+  }
+}
+
+// provides specific stylings for tablet breakpoint
+@mixin tablet {
+  @include breakpoint('tablet') {
+      @content;
+  }
+}
+
+// provides specific stylings for desktop breakpoint
+@mixin desktop {
+  @include breakpoint('desktop') {
+      @content;
+  }
+}
