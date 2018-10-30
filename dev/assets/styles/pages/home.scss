@@ -1,0 +1,94 @@
+.main_title{
+	letter-spacing: rem(12);
+	font-family: 'Montserrat', sans-serif;
+	font-size: rem(25);
+	text-transform: uppercase;
+	text-shadow: rem(10) rem(6) rgba(0,0,0, 0.2);
+	font-weight: 700;
+  margin: 0;
+  margin-left: rem(-40);
+  margin-bottom: rem(60);
+
+  @include tablet{
+    font-size: rem(80);
+    text-shadow: rem(18) rem(15) rgba(0,0,0, 0.2);
+  }
+}
+
+.horizontal_line{
+  margin-left: 15%;
+  margin-right: 0;
+  width: 85%;
+  height: rem(1);
+  background-color: red;
+  margin-top: rem(35);
+}
+
+.logo{
+	width: rem(255);
+  margin-left: rem(-40);
+}
+
+footer{
+	background-color: #434343ff;
+	color: #ffffff;
+	height: rem(60);
+	vertical-align: middle;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	position: fixed;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; 
+  text-transform: uppercase;
+}
+
+#forget_text{
+	font-size: rem(15);
+  font-weight: 0;
+  margin-left: rem(-40);
+}
+
+#user, #pass{
+  width: rem(250);
+  display: block;
+  height: rem(30);
+  border-width: rem(2);
+  font-size: rem(16);
+  margin: 0 auto rem(25);
+  padding: rem(5);
+  
+  @include tablet{
+    width: rem(450);
+  }
+}
+
+.credentials{
+  margin-bottom: rem(50);
+  text-align: center;
+  align-content: center;
+
+  ::placeholder{
+    color: rgba(0,0,0, 0.3);
+  }
+}
+
+.default_button{
+  width: rem(250);
+  margin-bottom: rem(35);
+    
+  @include tablet{
+    width: rem(450);
+  }
+
+  @include desktop{
+    width: rem(450);
+  }
+}
+
+form{
+  margin-left: rem(-40);
+}
+

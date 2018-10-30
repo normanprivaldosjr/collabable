@@ -1,3 +1,57 @@
-body {
-  margin: 0;
+input:focus, button:focus{
+  outline-width: 0;
+}
+
+body{
+	align-content: center;
+	text-align: center;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+button{
+	border: none;
+  	font-size: rem(14);
+  	background-color: $color-red-button;
+  	color: $color-white;
+  	text-transform: uppercase;
+  	padding: rem(10);
+  	height: rem(40);
+  	box-shadow: rem(15) rem(10) rgba(0,0,0, 0.5);
+}
+
+.dot_pattern{
+  background: transparent url("/Users/rembtalastasin/Development/collabable/dev/assets/images/dots.png") repeat;
+  position: absolute;
+  z-index: -1;
+  width: 45%;
+  height: 80%;
+  right: 0;
+  bottom: 0;
+}
+
+.line_layout{
+  border-left: 1px solid $color-red-line;
+  height: 94vh;
+  margin-left: rem(40);
+  margin-top: 2vh;
+}
+
+.line_layout::after{
+  // display: none;
+  content: '';
+  display: inline;
+  width: 140vh;
+  height: rem(1);
+  background-color: $color-red-line;
+  position: absolute;
+  transform: rotate(-35deg);
+  left: 0;
+  top: 55%;
+  z-index: -1;
+}
+
+a, a:hover{
+	color: #000000;
+	text-decoration: none;
 }
