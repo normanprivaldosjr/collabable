@@ -6,23 +6,23 @@ body{
 	align-content: center;
 	text-align: center;
 	margin: 0;
-	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: $font-default;
 }
 
 button{
 	border: none;
-  	font-size: rem(14);
-  	background-color: $color-red-button;
-  	color: $color-white;
-  	text-transform: uppercase;
-  	padding: rem(10);
-  	height: rem(40);
-  	box-shadow: rem(15) rem(10) rgba(0,0,0, 0.5);
+  font-size: rem(14);
+	background-color: $color-red-button;
+  color: $color-white;
+	text-transform: uppercase;
+  padding: rem(10);
+	height: rem(40);
+	box-shadow: rem(15) rem(10) rgba(0,0,0, 0.5);
 }
 
 .dot_pattern{
-  background: transparent url("/Users/rembtalastasin/Development/collabable/dev/assets/images/dots.png") repeat;
-  position: absolute;
+  background: transparent url("/Users/rembtalastasin/Development/collabable_korin/dev/assets/images/dots.png") repeat;
+  position: fixed;
   z-index: -1;
   width: 45%;
   height: 80%;
@@ -54,4 +54,39 @@ button{
 a, a:hover{
 	color: #000000;
 	text-decoration: none;
+}
+
+.form_layout{
+  margin-left: rem(-40);
+}
+
+
+.horizontal_line{
+  margin-left: 15%;
+  margin-right: 0;
+  width: 85%;
+  height: rem(1);
+  background-color: red;
+  margin-top: rem(35);
+}
+
+.logo{
+  width: rem(255);
+  margin-left: rem(-40);
+}
+
+footer{
+  background-color: #434343ff;
+  color: #ffffff;
+  height: rem(60);
+  vertical-align: middle;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; 
+  text-transform: uppercase;
 }

@@ -1,7 +1,12 @@
+//utilities
 @import "./utilities/variables";
 @import "./utilities/functions";
 @import "./utilities/mixins";
 @import "./utilities/colors";
 @import "./utilities/common";
 
-@import "./pages/home";
+//components per page
+@import "./pages/index";
+@import "./pages/forgetpass";
+@import "./pages/passsent";
+@import "./pages/homepage";
