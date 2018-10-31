@@ -1,0 +1,13 @@
+.email_message{
+  background-color: $color-grey-box;
+  display: block;
+  margin: 0 auto rem(50);
+  padding: rem(20);
+  width: rem(250);
+
+  @include tablet{
+    width: rem(450);
+  	padding: rem(40);
+    margin-top: rem(60);
+  }
+}
