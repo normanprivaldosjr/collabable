@@ -1,6 +1,6 @@
 .forgetpass_title{
   letter-spacing: rem(12);
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-montserrat;
   font-size: rem(25);
   text-shadow: rem(8) rem(5) rgba(0,0,0, 0.2);
   font-weight: 700;
@@ -47,8 +47,4 @@
       margin-left: rem(30);
     }
   }
-}
-
-form{
-  margin-left: rem(-40);
 }
