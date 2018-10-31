@@ -1,3 +1,20 @@
+.forgetpass_title{
+  letter-spacing: rem(12);
+  font-family: 'Montserrat', sans-serif;
+  font-size: rem(25);
+  text-shadow: rem(8) rem(5) rgba(0,0,0, 0.2);
+  font-weight: 700;
+  margin: 0;
+  margin-left: rem(-40);
+  margin-bottom: rem(60);
+
+  @include tablet{
+    font-size: rem(50);
+    text-shadow: rem(15) rem(12) rgba(0,0,0, 0.2);
+    margin-top: rem(35);
+  }
+}
+
 #emailadd{
   width: rem(250);
   display: block;
@@ -9,14 +26,29 @@
   
   @include tablet{
     width: rem(450);
+    margin-top: rem(80);
   }
 }
 
 .forget_buttons{
-	display: flex;
-	width: rem(150);
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(100);
+
+  button{
+    max-width: rem(300);
+  }
+
+  .confirm_button{ 
+    margin-left: 0;
+
+    @include tablet{
+      margin-left: rem(30);
+    }
+  }
 }
 
-// form{
-//   margin-left: rem(-40);
-// }
+form{
+  margin-left: rem(-40);
+}

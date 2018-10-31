@@ -18,7 +18,7 @@ button {
   box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.5); }
 
 .dot_pattern {
-  background: transparent url("/Users/rembtalastasin/Development/collabable/dev/assets/images/dots.png") repeat;
+  background: transparent url("/Users/rembtalastasin/Development/collabable_korin/dev/assets/images/dots.png") repeat;
   position: absolute;
   z-index: -1;
   width: 45%;
@@ -123,6 +123,50 @@ footer {
   @media (min-width: 1200px) {
     .default_button {
       width: 28.125rem; } }
+
+form {
+  margin-left: -2.5rem; }
+
+.forgetpass_title {
+  letter-spacing: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5625rem;
+  text-shadow: 0.5rem 0.3125rem rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin: 0;
+  margin-left: -2.5rem;
+  margin-bottom: 3.75rem; }
+  @media (min-width: 768px) {
+    .forgetpass_title {
+      font-size: 3.125rem;
+      text-shadow: 0.9375rem 0.75rem rgba(0, 0, 0, 0.2);
+      margin-top: 2.1875rem; } }
+
+#emailadd {
+  width: 15.625rem;
+  display: block;
+  height: 1.875rem;
+  border-width: 0.125rem;
+  font-size: 1rem;
+  margin: 0 auto 1.5625rem;
+  padding: 0.3125rem; }
+  @media (min-width: 768px) {
+    #emailadd {
+      width: 28.125rem;
+      margin-top: 5rem; } }
+
+.forget_buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.25rem; }
+  .forget_buttons button {
+    max-width: 18.75rem; }
+  .forget_buttons .confirm_button {
+    margin-left: 0; }
+    @media (min-width: 768px) {
+      .forget_buttons .confirm_button {
+        margin-left: 1.875rem; } }
 
 form {
   margin-left: -2.5rem; }
