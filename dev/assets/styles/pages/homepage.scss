@@ -1,0 +1,84 @@
+main{
+  width: 100%;
+  position: relative;
+}
+
+.sidebar{
+	float: left;
+	width: rem(260);
+	height: 200vh;
+	background-color: $color-dark-grey-sidebar;
+	max-width: rem(260);
+
+	@include tablet{
+		width: 25%;
+	}
+}
+
+.fixed_line{
+	position: fixed;
+	z-index: -1;
+}
+
+.logo_box{
+	background-color: $color-white;
+	padding: rem(10);
+	width: rem(222);
+    box-shadow: rem(12) rem(12) $color-red-button;
+
+	margin-top: rem(35);
+	margin-left: rem(2);
+
+	@include tablet{
+		margin-left: 0.8vw;
+		width: 78%;
+	}
+}
+
+.sidebar_title{
+
+  letter-spacing: rem(9);
+  font-family: $font-montserrat;
+  text-transform: uppercase;
+  text-shadow: rem(10) rem(6) rgba(0,0,0, 0.2);
+  font-weight: 700;
+  margin-bottom: rem(50);
+  line-height: rem(50);
+  font-size: rem(14);
+
+  @include tablet{
+    font-size: 1.3vw;
+    text-shadow: 0.5vw 0.4vw rgba(0,0,0, 0.2);
+  }
+}
+
+.member_name{
+	margin: 0;
+	color: $color-white;
+	font-size: rem(20);
+}
+
+.sidebar_divider{
+	height: rem(1);
+	background-color: $color-grey-box;
+	width: rem(208);
+	margin-top: rem(30);
+
+	@include tablet{
+		width: 20vw;
+	}
+}
+
+.toggle-btn{
+
+	left: 300%;
+	top: 15px;
+	position: absolute;
+	
+}
+
+span{
+		height: 20px;
+		background-color: white;
+
+	}
