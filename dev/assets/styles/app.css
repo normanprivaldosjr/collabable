@@ -1,0 +1,183 @@
+input:focus, button:focus {
+  outline-width: 0; }
+
+body {
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+button {
+  border: none;
+  font-size: 0.875rem;
+  background-color: #ef5145ff;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  height: 2.5rem;
+  box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.5); }
+
+.dot_pattern {
+  background: transparent url("/Users/rembtalastasin/Development/collabable_korin/dev/assets/images/dots.png") repeat;
+  position: absolute;
+  z-index: -1;
+  width: 45%;
+  height: 80%;
+  right: 0;
+  bottom: 0; }
+
+.line_layout {
+  border-left: 1px solid #ff0000;
+  height: 94vh;
+  margin-left: 2.5rem;
+  margin-top: 2vh; }
+
+.line_layout::after {
+  content: '';
+  display: inline;
+  width: 140vh;
+  height: 0.0625rem;
+  background-color: #ff0000;
+  position: absolute;
+  transform: rotate(-35deg);
+  left: 0;
+  top: 55%;
+  z-index: -1; }
+
+a, a:hover {
+  color: #000000;
+  text-decoration: none; }
+
+.form_layout {
+  margin-left: -2.5rem; }
+
+.horizontal_line {
+  margin-left: 15%;
+  margin-right: 0;
+  width: 85%;
+  height: 0.0625rem;
+  background-color: red;
+  margin-top: 2.1875rem; }
+
+.logo {
+  width: 15.9375rem;
+  margin-left: -2.5rem; }
+
+footer {
+  background-color: #434343ff;
+  color: #ffffff;
+  height: 3.75rem;
+  vertical-align: middle;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-transform: uppercase; }
+
+.main_title {
+  letter-spacing: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  text-shadow: 0.625rem 0.375rem rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin: 0;
+  margin-left: -2.5rem;
+  margin-bottom: 3.75rem; }
+  @media (min-width: 768px) {
+    .main_title {
+      font-size: 5rem;
+      text-shadow: 1.125rem 0.9375rem rgba(0, 0, 0, 0.2); } }
+
+#forget_text {
+  font-size: 0.9375rem;
+  font-weight: 0;
+  margin-left: -2.5rem; }
+
+#user, #pass {
+  width: 15.625rem;
+  display: block;
+  height: 1.875rem;
+  border-width: 0.125rem;
+  font-size: 1rem;
+  margin: 0 auto 1.5625rem;
+  padding: 0.3125rem; }
+  @media (min-width: 768px) {
+    #user, #pass {
+      width: 28.125rem; } }
+
+.credentials {
+  margin-bottom: 3.125rem;
+  text-align: center;
+  align-content: center; }
+  .credentials ::placeholder {
+    color: rgba(0, 0, 0, 0.3); }
+
+.default_button {
+  width: 15.625rem;
+  margin-bottom: 2.1875rem; }
+  @media (min-width: 768px) {
+    .default_button {
+      width: 28.125rem; } }
+  @media (min-width: 1200px) {
+    .default_button {
+      width: 28.125rem; } }
+
+.forgetpass_title {
+  letter-spacing: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  text-shadow: 0.5rem 0.3125rem rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  margin: 0;
+  margin-left: -2.5rem;
+  margin-bottom: 3.75rem; }
+  @media (min-width: 768px) {
+    .forgetpass_title {
+      font-size: 3.125rem;
+      text-shadow: 0.9375rem 0.75rem rgba(0, 0, 0, 0.2);
+      margin-top: 2.1875rem; } }
+
+#emailadd {
+  width: 15.625rem;
+  display: block;
+  height: 1.875rem;
+  border-width: 0.125rem;
+  font-size: 1rem;
+  margin: 0 auto 1.5625rem;
+  padding: 0.3125rem; }
+  @media (min-width: 768px) {
+    #emailadd {
+      width: 28.125rem;
+      margin-top: 5rem; } }
+
+.forget_buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.25rem; }
+  .forget_buttons button {
+    max-width: 18.75rem; }
+  .forget_buttons .confirm_button {
+    margin-left: 0; }
+    @media (min-width: 768px) {
+      .forget_buttons .confirm_button {
+        margin-left: 1.875rem; } }
+
+.email_message {
+  background-color: #efefefff;
+  display: block;
+  margin: 0 auto 3.125rem;
+  padding: 1.25rem;
+  width: 15.625rem; }
+  @media (min-width: 768px) {
+    .email_message {
+      width: 28.125rem;
+      padding: 2.5rem;
+      margin-top: 3.75rem; } }
+
+/*# sourceMappingURL=app.css.map */
