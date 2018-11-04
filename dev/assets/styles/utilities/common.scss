@@ -21,7 +21,7 @@ button{
 }
 
 .dot_pattern{
-  background: transparent url("/Users/rembtalastasin/Development/collabable_korin/dev/assets/images/dots.png") repeat;
+  background: transparent url("../assets/images/dots.png") repeat;
   position: fixed;
   z-index: -1;
   width: 45%;
@@ -44,7 +44,7 @@ button{
   width: 140vh;
   height: rem(1);
   background-color: $color-red-line;
-  position: absolute;
+  position: fixed;
   transform: rotate(-35deg);
   left: 0;
   top: 55%;
@@ -89,4 +89,159 @@ footer{
   align-content:center;
   flex-direction:column; 
   text-transform: uppercase;
+}
+
+.sidebar_content{
+  margin-top: rem(8);
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: rem(40);
+
+  ul{
+    padding: 0;
+  }
+
+  ul > li{
+    margin-bottom: rem(3);
+    background-color: $color-grey-tab;
+    list-style-type: none;
+  }
+  .active_tab{
+    background-color: $color-grey-active-tab;
+    border-left: rem(15) solid $color-red-signout;
+  }
+}
+
+.signout{
+  background-color: $color-red-signout;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: rem(40);
+  margin-top: rem(35);
+  color: $color-white;
+  bottom: 20;
+  width: rem(260);
+  position: fixed;
+}
+
+.sidebar{
+  float: left;
+  width: rem(260);
+  height: 200vh;
+  background-color: $color-dark-grey-sidebar;
+  max-width: rem(260);
+  position: fixed;
+  left: rem(-261);
+
+  @include tablet{
+    width: 25%;
+    left: 0;
+  }
+
+    &.display-sidebar{
+    left: 0;
+    }
+}
+
+.fixed_line{
+  position: absolute;
+  z-index: -1;
+}
+
+.logo_box{
+  background-color: $color-white;
+  padding: rem(10);
+  width: rem(222);
+    box-shadow: rem(12) rem(12) $color-red-button;
+  margin-top: rem(25);
+  margin-left: rem(2);
+
+  @include tablet{
+    margin-left: 0.8vw;
+    width: 78%;
+  }
+}
+
+.sidebar_title{
+  letter-spacing: rem(9);
+  font-family: $font-montserrat;
+  text-transform: uppercase;
+  text-shadow: rem(5) rem(4) rgba(0,0,0, 0.2);
+  font-weight: 700;
+  margin-bottom: rem(40);
+  line-height: rem(50);
+  font-size: rem(14);
+
+  @include tablet{
+    font-size: 1.2vw;
+    text-shadow: 0.4vw 0.3vw rgba(0,0,0, 0.2);
+  }
+}
+
+.member_name{
+  margin: 0;
+  color: $color-white;
+  font-size: rem(18);
+  text-transform: uppercase;
+}
+
+.sidebar_divider{
+  height: rem(1);
+  background-color: $color-grey-box;
+  width: rem(208);
+  margin-top: rem(20);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet{
+    width: 15vw;
+  }
+}
+
+.toggle-btn{
+  left: 105%;
+  top: rem(20);
+  position: absolute;
+  
+  @include tablet{
+    display: none;
+  }
+}
+
+span{
+  height: rem(8);
+  width: rem(40);
+  margin: rem(3);
+  background-color: $color-dark-grey-sidebar;
+  display: block;
+}
+
+.module_title{
+  letter-spacing: rem(12);
+  font-family: $font-montserrat;
+  font-size: rem(25);
+  text-transform: uppercase;
+  text-shadow: rem(10) rem(6) rgba(0,0,0, 0.2);
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: rem(20);
+  
+  @include tablet{
+    font-size: 1.8vw;
+    text-shadow: rem(12) rem(8) rgba(0,0,0, 0.2);
+  }
+
+}
+
+.project_header{
+  margin-left: rem(-40);
+  margin-top: rem(50);
+
+  @include tablet{
+    display: flex;
+    margin-top: rem(30);
+    margin-left: 21vw;
+  }
 }
