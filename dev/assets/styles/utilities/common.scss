@@ -2,6 +2,10 @@ input:focus, button:focus{
   outline-width: 0;
 }
 
+select:focus{
+  outline-width: 0;
+}
+
 body{
 	align-content: center;
 	text-align: center;
@@ -93,10 +97,6 @@ footer{
 
 .sidebar_content{
   margin-top: rem(8);
-  color: $color-white;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: rem(40);
 
   ul{
     padding: 0;
@@ -107,6 +107,14 @@ footer{
     background-color: $color-grey-tab;
     list-style-type: none;
   }
+
+  li a{
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: rem(40);
+  }
+
   .active_tab{
     background-color: $color-grey-active-tab;
     border-left: rem(15) solid $color-red-signout;
@@ -121,8 +129,14 @@ footer{
   margin-top: rem(35);
   color: $color-white;
   bottom: 20;
+  max-width: rem(260);
   width: rem(260);
   position: fixed;
+
+  @include tablet{
+    width: 25%;
+    left: 0;
+  }
 }
 
 .sidebar{
@@ -133,15 +147,16 @@ footer{
   max-width: rem(260);
   position: fixed;
   left: rem(-261);
+  z-index: 10;
 
   @include tablet{
     width: 25%;
     left: 0;
   }
 
-    &.display-sidebar{
-    left: 0;
-    }
+  &.display-sidebar{
+  left: 0;
+  }
 }
 
 .fixed_line{
@@ -181,9 +196,12 @@ footer{
 
 .member_name{
   margin: 0;
-  color: $color-white;
-  font-size: rem(18);
-  text-transform: uppercase;
+  a{
+    color: $color-white;
+    font-size: rem(18);
+    text-transform: uppercase;  
+  }
+  
 }
 
 .sidebar_divider{
@@ -243,5 +261,18 @@ span{
     display: flex;
     margin-top: rem(30);
     margin-left: 21vw;
+  }
+}
+
+.main_page{
+  position: absolute;
+  margin-left: rem(40);
+}
+
+.no-button{
+  width: 82vw;
+
+  @include tablet{
+    width: 93vw;
   }
 }

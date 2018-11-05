@@ -1,6 +1,9 @@
 input:focus, button:focus {
   outline-width: 0; }
 
+select:focus {
+  outline-width: 0; }
+
 body {
   align-content: center;
   text-align: center;
@@ -79,17 +82,18 @@ footer {
   text-transform: uppercase; }
 
 .sidebar_content {
-  margin-top: 0.5rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 2.5rem; }
+  margin-top: 0.5rem; }
   .sidebar_content ul {
     padding: 0; }
   .sidebar_content ul > li {
     margin-bottom: 0.1875rem;
     background-color: #515151;
     list-style-type: none; }
+  .sidebar_content li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 2.5rem; }
   .sidebar_content .active_tab {
     background-color: #666666;
     border-left: 0.9375rem solid #e94f44; }
@@ -102,8 +106,13 @@ footer {
   margin-top: 2.1875rem;
   color: #fff;
   bottom: 20;
+  max-width: 16.25rem;
   width: 16.25rem;
   position: fixed; }
+  @media (min-width: 768px) {
+    .signout {
+      width: 25%;
+      left: 0; } }
 
 .sidebar {
   float: left;
@@ -112,7 +121,8 @@ footer {
   background-color: #434343;
   max-width: 16.25rem;
   position: fixed;
-  left: -16.3125rem; }
+  left: -16.3125rem;
+  z-index: 10; }
   @media (min-width: 768px) {
     .sidebar {
       width: 25%;
@@ -151,10 +161,11 @@ footer {
       text-shadow: 0.4vw 0.3vw rgba(0, 0, 0, 0.2); } }
 
 .member_name {
-  margin: 0;
-  color: #fff;
-  font-size: 1.125rem;
-  text-transform: uppercase; }
+  margin: 0; }
+  .member_name a {
+    color: #fff;
+    font-size: 1.125rem;
+    text-transform: uppercase; }
 
 .sidebar_divider {
   height: 0.0625rem;
@@ -205,6 +216,16 @@ span {
       display: flex;
       margin-top: 1.875rem;
       margin-left: 21vw; } }
+
+.main_page {
+  position: absolute;
+  margin-left: 2.5rem; }
+
+.no-button {
+  width: 82vw; }
+  @media (min-width: 768px) {
+    .no-button {
+      width: 93vw; } }
 
 .main_title {
   letter-spacing: 0.75rem;
@@ -325,9 +346,10 @@ main {
 .project_cards {
   display: grid;
   margin-left: -2.5rem;
-  color: #fff;
   text-transform: uppercase;
   line-height: 8.125rem; }
+  .project_cards a {
+    color: #fff; }
   @media (min-width: 768px) {
     .project_cards {
       margin-top: 0;
@@ -344,5 +366,65 @@ main {
     margin: 1.5625rem;
     box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.3);
     background-color: #434343; }
+
+.profile_settings {
+  display: block;
+  margin-left: -2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 8.125rem;
+  position: relative; }
+  @media (min-width: 768px) {
+    .profile_settings {
+      margin-top: 0;
+      margin-left: 21vw; } }
+
+.profile_content {
+  display: block;
+  width: 60vw;
+  background-color: #fff;
+  border: 3px solid #efefefff;
+  padding: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0.9375rem 0.625rem #ef5145ff;
+  margin-top: 25vh;
+  margin-bottom: 5vw; }
+  .profile_content input {
+    width: 60vw;
+    border: none;
+    background-color: #f3f3f3;
+    height: 1.25rem;
+    padding: 0.9375rem; }
+  .profile_content select {
+    width: 60vw;
+    padding: 0.40625rem;
+    border: none;
+    background-color: #f3f3f3; }
+  .profile_content h4 {
+    text-align: left;
+    margin: 0.5rem;
+    font-weight: 100;
+    font-size: 0.75rem; }
+  @media (min-width: 768px) {
+    .profile_content {
+      width: 40vw;
+      margin-top: 18vh;
+      margin-left: 32vw;
+      padding: 2.5rem; }
+      .profile_content input {
+        width: 40vw; }
+      .profile_content select {
+        width: 40vw; }
+      .profile_content h4 {
+        font-size: 0.875rem; } }
+
+.save_changes {
+  box-shadow: none;
+  width: 60vw;
+  margin-top: 1.25rem; }
+  @media (min-width: 768px) {
+    .save_changes {
+      width: 30vw;
+      margin-top: 2.5rem; } }
 
 /*# sourceMappingURL=app.css.map */
