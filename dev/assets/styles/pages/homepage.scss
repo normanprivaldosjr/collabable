@@ -18,9 +18,11 @@ main{
 .project_cards{
 	display: grid;
   	margin-left: rem(-40);
-  	color: $color-white;
   	text-transform: uppercase;
   	line-height: rem(130);	
+  	a{
+  		color: $color-white;
+  	}
 
 	@include tablet{
 		margin-top: 0;
@@ -44,3 +46,4 @@ main{
   		background-color: $color-dark-grey-sidebar;
   	}
 }
+

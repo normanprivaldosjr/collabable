@@ -1,0 +1,77 @@
+.profile_settings{
+	display: block;
+  margin-left: rem(-40);
+  color: $color-white;
+	text-transform: uppercase;
+ 	line-height: rem(130);	
+  position: relative;
+
+	@include tablet{
+		margin-top: 0;
+   	margin-left: 21vw;  	
+ 	}
+}
+
+.profile_content{
+  display: block;
+  width: 60vw;
+  background-color: $color-white;
+  border: 3px solid $color-grey-box;
+  padding: rem(20);
+  font-family: $font-montserrat;
+  box-shadow: rem(15) rem(10) $color-red-button;
+  margin-top: 25vh;
+  margin-bottom: 5vw;
+
+  input{
+    width: 60vw;
+    border: none;
+    background-color: $color-grey-input;
+    height: rem(20);
+    padding: rem(15);
+  }
+
+  select{
+    width: 60vw;
+    padding: rem(6.5);
+    border: none;
+    background-color: $color-grey-input;
+  }
+
+  h4{
+    text-align: left;
+    margin: rem(8);
+    font-weight: 100;
+    font-size: rem(12);
+  }
+
+  @include tablet{  
+    width: 40vw;
+    margin-top: 18vh;
+    margin-left: 32vw;
+    padding: rem(40);
+
+    input{
+      width: 40vw;
+    }
+
+    select{
+      width: 40vw;
+    }
+
+    h4{
+      font-size: rem(14);
+    }
+  }
+}
+
+.save_changes{
+  box-shadow: none;
+  width: 60vw;
+  margin-top: rem(20);
+
+  @include tablet{
+    width: 30vw;
+    margin-top: rem(40);
+  }
+}
