@@ -10,8 +10,8 @@
             $_SESSION['ID'] = "set";
             $stmt->bind_result($employeeId, $employeeName, $employeeUserName, $employeePassWord , $employeeEmailAddress, $employeeContactNum , $employeeAddress, $employeeRole);
             if($stmt->fetch()){
-                $_SESSION['ID'] = $employeeId;
                 $_SESSION['userId'] = $employeeId;
+                $_SESSION['userName'] = $employeeName;
                     if($employeeRole == "admin"){
                         header("location:homepage-admin.php");
                     } else if($employeeRole == "leader") {

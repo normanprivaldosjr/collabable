@@ -1,3 +1,10 @@
+<?php
+
+    session_start();
+
+?>
+
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -17,7 +24,7 @@
         <div class="logo_box sidebar_title">
             COLLABABLE
         </div>
-        <h4 class="member_name"><a href="profilesettings.php">Leader</a></h4>
+        <h4 class="member_name"><a href="profilesettings.php"><?php echo $_SESSION['userName']; ?></a></h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
             <ul>
