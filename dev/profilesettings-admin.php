@@ -1,9 +1,8 @@
 <?php
-
     session_start();
-
+    require_once "config.php";
+    require "profilesettings-adminController.php";
 ?>
-
 
 <html>
 <head>
@@ -51,31 +50,35 @@
             <div class="profile_settings"></div>
         </div>
 
-        <form action="profilesettings.php">
+        <form method="POST">
             <div class="profile_content">
-                <h4></h4>
-                <input type="text" name="settings_name" id="settings_name" value="">
+                <h4>Name</h4>
+                <input type="text" name="settings_name" id="settings_name" value="<?php echo $empName;?>">
 
                 <h4>Username</h4>
-                <input type="text" name="settings_user" id="settings_user" value="">
+                <input type="text" name="settings_user" id="settings_user" value="<?php echo $empUserName;?>">
 
                 <h4>Password</h4>
-                <input type="password" name="settings_pass" id="settings_pass" value="">
+                <input type="password" name="settings_pass" id="settings_pass" value="<?php echo $empPassword;?>">
 
                 <h4>Email</h4>
-                <input type="text" name="settings_email" id="settings_email" value="">
+                <input type="text" name="settings_email" id="settings_email" value="<?php echo $empEmailAdd;?>">
 
                 <h4>Contact Number</h4>
-                <input type="text" name="settings_contact" id="settings_contact" value="">
+                <input type="text" name="settings_contact" id="settings_contact" value="<?php echo $empContactNum;?>">
+
+                <h4>Address</h4>
+                <input type="text" name="settings_address" id="settings_address" value="<?php echo $empAddress;?>">
 
                 <h4>Privilege</h4>
-                <select id="settings_privilege">
-                    <option value="Leader">Leader</option>
-                    <option value="Member">Member</option>
-                    <option value="Admin">Admin</option>
-                </select>
+                <input type="text" value="<?php echo $empRole;?>" readonly>
+<!--                <select id="settings_privilege">-->
+<!--                    <option value="Leader">Leader</option>-->
+<!--                    <option value="Member">Member</option>-->
+<!--                    <option value="Admin">Admin</option>-->
+<!--                </select>-->
 
-                <button class="save_changes" type="submit">Save Changes</button>
+                <button class="save_changes" type="submit" name="submit">Save Changes</button>
             </div>
         </form>
 
