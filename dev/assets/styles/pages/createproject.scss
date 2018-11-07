@@ -1,0 +1,196 @@
+.form_content{
+  display: block;
+  width: 60vw;
+  background-color: $color-white;
+  border: 3px solid $color-grey-border;
+  padding: rem(20);
+  font-family: $font-montserrat;
+  margin-bottom: 5vw;
+
+  input{
+    width: 60vw;
+    border: none;
+    background-color: $color-grey-input;
+    height: rem(20);
+    padding: rem(15);
+  }
+
+  select{
+    width: 60vw;
+    padding: rem(6.5);
+    border: none;
+    background-color: $color-grey-input;
+  }
+
+  h4{
+    text-align: left;
+    margin: rem(8);
+    font-weight: 100;
+    font-size: rem(12);
+  }
+
+  @include tablet{  
+    width: 40vw;
+    margin-left: 32vw;
+    padding: rem(30);
+
+    input{
+      width: 40vw;
+    }
+
+    select{
+      width: 40vw;
+    }
+
+    h4{
+      font-size: rem(14);
+    }
+  }
+}
+
+.form_title{
+  display: block;
+  width: 60vw;
+  background-color: $color-red-button;
+  border: 3px solid $color-grey-border;
+  border-bottom: none;
+  padding: rem(20);
+  font-family: $font-montserrat;
+  margin-top: 25vh;
+  margin-bottom: 0;
+  text-align: left;
+  color: $color-white;
+  font-weight: bold;
+
+  @include tablet{  
+    width: 40vw;
+    margin-top: 18vh;
+    margin-left: 32vw;
+    padding: rem(10) rem(30);
+
+    h4{
+      font-size: rem(14);
+    }
+  }
+}
+
+.form_buttons{
+  display: block;    
+  width: 60vw;
+  font-family: $font-montserrat;
+  margin-top: 8vh;
+  margin-bottom: 0;
+
+  button{
+    margin-bottom: rem(5);
+    box-shadow: none;
+    width: rem(192);
+    background-color: $color-grey-button;  
+    color: $color-black;
+    border: 3px solid $color-grey-border;
+  }
+
+  @include tablet{  
+    display: grid;    
+    grid-template-columns: auto auto;
+    width: 40vw;
+    
+    h4{
+      font-size: rem(14);
+    }
+
+    button{
+      width: 20vw;
+    }
+
+    .cancel_project{
+      border-right: 1px solid $color-grey-border;
+    }
+
+    .create_project{
+      border-left: 1px solid $color-grey-border;
+    }
+  }
+}
+
+.new-project_description{
+  width: 60vw;
+  border: none;
+  background-color: $color-grey-input;
+  height: rem(120);
+  padding: rem(15);
+  font-family: $font-default;
+  font-size: rem(13);
+
+  @include tablet{
+    width: 40vw;
+  }
+}
+
+#new-project_members{
+  @include tablet{
+    width: 40vw;
+  }
+
+  @include desktop{
+    width: 26vw;
+  }
+}
+
+.add_member{
+  box-shadow: none;
+  width: 60vw;
+  margin-top: rem(10);
+  
+  @include tablet{
+    width: 40vw;
+    margin-top: rem(15);
+  }
+
+  @include desktop{
+    width: 11vw;
+    margin-left: rem(26);
+  }
+}
+
+.lifecycle{
+  @include tablet{
+    display: block;
+  }
+
+  @include desktop{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .phases{
+    input{
+      margin: rem(5);
+    }
+
+    @include tablet{
+      width: 70%;
+
+      input{
+        width: 100%;
+      }
+    }
+  }
+
+  .estimation{
+    input{
+      margin: rem(5);
+      padding: rem(15) rem(2);
+    }
+
+    @include tablet{
+      input{
+        width: 43%;
+      }
+    }
+  }
+
+}
+
+
+

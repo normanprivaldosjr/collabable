@@ -1,4 +1,4 @@
-input:focus, button:focus{
+input:focus, button:focus, textarea:focus{
   outline-width: 0;
 }
 
@@ -275,4 +275,8 @@ span{
   @include tablet{
     width: 93vw;
   }
+}
+
+.edit_icon{
+  width: rem(15);
 }

@@ -17,33 +17,33 @@ main{
 
 .project_cards{
 	display: grid;
-  	margin-left: rem(-40);
-  	text-transform: uppercase;
-  	line-height: rem(130);	
-  	a{
-  		color: $color-white;
-  	}
+  margin-left: rem(-40);
+	text-transform: uppercase;
+	line-height: rem(130);	
+ 	a{
+ 		color: $color-white;
+ 	}
 
 	@include tablet{
 		margin-top: 0;
-    	margin-left: 21vw;
+  	margin-left: 21vw;
 		grid-template-columns: auto auto;    	
-  	}
+	}
 
-  	@include desktop{
+  @include desktop{
 		grid-template-columns: auto auto auto;
-  	}
+  }
 
-  	.open-project{
-  		background-color: $color-red-button;
-  		margin: rem(25);
+  .open-project{
+  	background-color: $color-red-button;
+  	margin: rem(25);
 		box-shadow: rem(15) rem(10) rgba(0,0,0, 0.3); 
-  	}
+  }
 
-  	.close-project{
-  		margin: rem(25);
-		box-shadow: rem(15) rem(10) rgba(0,0,0, 0.3); 
-  		background-color: $color-dark-grey-sidebar;
-  	}
+  .close-project{
+  	margin: rem(25);
+  	box-shadow: rem(15) rem(10) rgba(0,0,0, 0.3); 
+  	background-color: $color-dark-grey-sidebar;
+	}
 }
 

@@ -1,4 +1,4 @@
-input:focus, button:focus {
+input:focus, button:focus, textarea:focus {
   outline-width: 0; }
 
 select:focus {
@@ -227,6 +227,9 @@ span {
     .no-button {
       width: 93vw; } }
 
+.edit_icon {
+  width: 0.9375rem; }
+
 .main_title {
   letter-spacing: 0.75rem;
   font-family: "Montserrat", sans-serif;
@@ -275,6 +278,9 @@ span {
   @media (min-width: 1200px) {
     .default_button {
       width: 28.125rem; } }
+
+p {
+  color: red; }
 
 .forgetpass_title {
   letter-spacing: 0.75rem;
@@ -426,5 +432,143 @@ main {
     .save_changes {
       width: 30vw;
       margin-top: 2.5rem; } }
+
+.form_content {
+  display: block;
+  width: 60vw;
+  background-color: #fff;
+  border: 3px solid #b7b7b7;
+  padding: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5vw; }
+  .form_content input {
+    width: 60vw;
+    border: none;
+    background-color: #f3f3f3;
+    height: 1.25rem;
+    padding: 0.9375rem; }
+  .form_content select {
+    width: 60vw;
+    padding: 0.40625rem;
+    border: none;
+    background-color: #f3f3f3; }
+  .form_content h4 {
+    text-align: left;
+    margin: 0.5rem;
+    font-weight: 100;
+    font-size: 0.75rem; }
+  @media (min-width: 768px) {
+    .form_content {
+      width: 40vw;
+      margin-left: 32vw;
+      padding: 1.875rem; }
+      .form_content input {
+        width: 40vw; }
+      .form_content select {
+        width: 40vw; }
+      .form_content h4 {
+        font-size: 0.875rem; } }
+
+.form_title {
+  display: block;
+  width: 60vw;
+  background-color: #ef5145ff;
+  border: 3px solid #b7b7b7;
+  border-bottom: none;
+  padding: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 25vh;
+  margin-bottom: 0;
+  text-align: left;
+  color: #fff;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    .form_title {
+      width: 40vw;
+      margin-top: 18vh;
+      margin-left: 32vw;
+      padding: 0.625rem 1.875rem; }
+      .form_title h4 {
+        font-size: 0.875rem; } }
+
+.form_buttons {
+  display: block;
+  width: 60vw;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 8vh;
+  margin-bottom: 0; }
+  .form_buttons button {
+    margin-bottom: 0.3125rem;
+    box-shadow: none;
+    width: 12rem;
+    background-color: #f3f3f3;
+    color: #000000;
+    border: 3px solid #b7b7b7; }
+  @media (min-width: 768px) {
+    .form_buttons {
+      display: grid;
+      grid-template-columns: auto auto;
+      width: 40vw; }
+      .form_buttons h4 {
+        font-size: 0.875rem; }
+      .form_buttons button {
+        width: 20vw; }
+      .form_buttons .cancel_project {
+        border-right: 1px solid #b7b7b7; }
+      .form_buttons .create_project {
+        border-left: 1px solid #b7b7b7; } }
+
+.new-project_description {
+  width: 60vw;
+  border: none;
+  background-color: #f3f3f3;
+  height: 7.5rem;
+  padding: 0.9375rem;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.8125rem; }
+  @media (min-width: 768px) {
+    .new-project_description {
+      width: 40vw; } }
+
+@media (min-width: 768px) {
+  #new-project_members {
+    width: 40vw; } }
+@media (min-width: 1200px) {
+  #new-project_members {
+    width: 26vw; } }
+
+.add_member {
+  box-shadow: none;
+  width: 60vw;
+  margin-top: 0.625rem; }
+  @media (min-width: 768px) {
+    .add_member {
+      width: 40vw;
+      margin-top: 0.9375rem; } }
+  @media (min-width: 1200px) {
+    .add_member {
+      width: 11vw;
+      margin-left: 1.625rem; } }
+
+@media (min-width: 768px) {
+  .lifecycle {
+    display: block; } }
+@media (min-width: 1200px) {
+  .lifecycle {
+    display: grid;
+    grid-template-columns: auto auto; } }
+.lifecycle .phases input {
+  margin: 0.3125rem; }
+@media (min-width: 768px) {
+  .lifecycle .phases {
+    width: 70%; }
+    .lifecycle .phases input {
+      width: 100%; } }
+.lifecycle .estimation input {
+  margin: 0.3125rem;
+  padding: 0.9375rem 0.125rem; }
+@media (min-width: 768px) {
+  .lifecycle .estimation input {
+    width: 43%; } }
 
 /*# sourceMappingURL=app.css.map */

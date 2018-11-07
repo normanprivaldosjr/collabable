@@ -1,8 +1,7 @@
 <?php
     session_start();
-    require_once "config.php";
-    require "profilesettings-adminController.php";
 ?>
+
 
 <html>
 <head>
@@ -23,12 +22,14 @@
         <div class="logo_box sidebar_title">
             COLLABABLE
         </div>
-        <h4 class="member_name"><a href="profilesettings-admin.php"><?php echo $_SESSION['userName'];  ?></a></h4>
+        <h4 class="member_name">
+            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>CORINNE RELOJ
+             <img src="assets/images/edit_icon.png" class="edit_icon"></a>
+        </h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
             <ul>
-                <li class=""><a href="homepage-admin.php">Home</a></li>
-                <li><a href="">Users</a></li>
+                <li class=""><a href="homepage.php">Home</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -50,35 +51,27 @@
             <div class="profile_settings"></div>
         </div>
 
-        <form method="POST">
+        <form action="profilesettings.php">
             <div class="profile_content">
                 <h4>Name</h4>
-                <input type="text" name="settings_name" id="settings_name" value="<?php echo $empName;?>">
+                <input type="text" name="settings_name" id="settings_name" value="">
 
                 <h4>Username</h4>
-                <input type="text" name="settings_user" id="settings_user" value="<?php echo $empUserName;?>">
+                <input type="text" name="settings_user" id="settings_user" value="">
 
                 <h4>Password</h4>
-                <input type="password" name="settings_pass" id="settings_pass" value="<?php echo $empPassword;?>">
+                <input type="password" name="settings_pass" id="settings_pass" value="">
 
                 <h4>Email</h4>
-                <input type="text" name="settings_email" id="settings_email" value="<?php echo $empEmailAdd;?>">
+                <input type="text" name="settings_email" id="settings_email" value="">
 
                 <h4>Contact Number</h4>
-                <input type="text" name="settings_contact" id="settings_contact" value="<?php echo $empContactNum;?>">
-
-                <h4>Address</h4>
-                <input type="text" name="settings_address" id="settings_address" value="<?php echo $empAddress;?>">
+                <input type="text" name="settings_contact" id="settings_contact" value="">
 
                 <h4>Privilege</h4>
-                <input type="text" value="<?php echo $empRole;?>" readonly>
-<!--                <select id="settings_privilege">-->
-<!--                    <option value="Leader">Leader</option>-->
-<!--                    <option value="Member">Member</option>-->
-<!--                    <option value="Admin">Admin</option>-->
-<!--                </select>-->
-
-                <button class="save_changes" type="submit" name="submit">Save Changes</button>
+                <input type="text" name="settings_privilege" id="settings_privilege"value="<?php echo $empRole;?>" readonly>
+                
+                <button class="save_changes" type="submit">Save Changes</button>
             </div>
         </form>
 
