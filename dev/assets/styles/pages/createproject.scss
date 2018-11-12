@@ -183,26 +183,16 @@
   font-size: rem(12);
   select{
     width: 16vw;
+
     @include tablet{
+      width: 7vw;
+    }
+
+    @include desktop{
       width: 5vw;
     }
   }
 
-  input{
-    margin-left: 0;
-
-    @include tablet{
-      width: 17vw;
-    }
-  }
-
-  .dt-checkboxes{
-    width: rem(15);
-  }
-
-  .dt-checkboxes-select-all > input{
-    width: rem(15);
-  }
 }
 
 #example_paginate{
@@ -216,7 +206,7 @@
     display: inherit;
 
     a{
-      padding-right: rem(18);
+      padding-right: rem(16);
     }
   }
 }
@@ -243,8 +233,11 @@
   }
   
   label > input{
+    margin-left: 0;
+
     @include tablet{
       margin-left: rem(10);  
+      width: 17vw;
     }
   }
 }

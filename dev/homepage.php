@@ -77,12 +77,6 @@
             <a href="">
                 <div class="close-project">Project 5</div>
             </a>
-            <a href="">
-                <div class="close-project">Project 6</div>
-            </a>
-            <a href="">
-                <div class="close-project">Project 7</div>
-            </a>
         </div>
 
     </div>

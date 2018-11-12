@@ -87,14 +87,22 @@ require "createProjectController.php";
                 <!-- <input type="text" name="new-project_members" id="new-project_members" placeholder="Search for members...">
                 <button class="add_member" name="add_member">ADD MEMBER</button> -->
                 <table id="example" class="display" cellspacing="0" width="100%">
-                    <thead class=".dt-checkboxes .dt-checkboxes-select-all">
+                    <thead>
                         <tr>
-                            <th></th>
+                            <th style="width: 4.3vw;"></th>
                             <th>Name</th>
                         </tr>
                     </thead>
                     <tbody>
-
+                    <!-- <tr>
+                        <td><input type="checkbox"style="width: 4.3vw;"></td>
+                        <td>Corinne Reloj</td>
+                    </tr>                    
+                    <tr>
+                        <td><input type="checkbox"style="width: 4.3vw;"></td>
+                        <td>Aloy Chua</td>
+                    </tr> -->
+                    
                     <?php
 
                     require_once "config.php";
@@ -107,7 +115,7 @@ require "createProjectController.php";
                         $name = $row['employeeName'];
                     ?>
                     <tr>
-                        <td><input type="checkbox" name="members[]" value="<?php echo $id; ?>"></td>
+                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>"></td>
                         <td><?php echo $name; ?></td>
                     </tr>
 
@@ -116,7 +124,7 @@ require "createProjectController.php";
                     </tbody>
                 </table>
 
-                <h4 style="margin-top: 35">Estimated Life Cycle</h4>
+                <h4 style="margin-top: 35px">Estimated Life Cycle</h4>
                 <div class="lifecycle">
                     <div class="phases">
                         <h4>Phases</h4>

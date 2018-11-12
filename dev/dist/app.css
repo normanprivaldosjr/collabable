@@ -577,16 +577,10 @@ main {
     width: 16vw; }
     @media (min-width: 768px) {
       #example_wrapper select {
+        width: 7vw; } }
+    @media (min-width: 1200px) {
+      #example_wrapper select {
         width: 5vw; } }
-  #example_wrapper input {
-    margin-left: 0; }
-    @media (min-width: 768px) {
-      #example_wrapper input {
-        width: 17vw; } }
-  #example_wrapper .dt-checkboxes {
-    width: 0.9375rem; }
-  #example_wrapper .dt-checkboxes-select-all > input {
-    width: 0.9375rem; }
 
 #example_paginate {
   display: flex;
@@ -597,7 +591,7 @@ main {
     margin: 0 auto;
     display: inherit; }
     #example_paginate span a {
-      padding-right: 1.125rem; }
+      padding-right: 1rem; }
 
 .dataTables_info {
   display: none; }
@@ -615,8 +609,11 @@ main {
     #example_filter {
       margin-top: 0;
       margin-bottom: 0; } }
-  @media (min-width: 768px) {
-    #example_filter label > input {
-      margin-left: 0.625rem; } }
+  #example_filter label > input {
+    margin-left: 0; }
+    @media (min-width: 768px) {
+      #example_filter label > input {
+        margin-left: 0.625rem;
+        width: 17vw; } }
 
 /*# sourceMappingURL=app.css.map */
