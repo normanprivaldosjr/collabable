@@ -24,8 +24,8 @@
             COLLABABLE
         </div>
         <h4 class="member_name">
-        	<a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>CORINNE RELOJ
-        	 <img src="assets/images/edit_icon.png" class="edit_icon"></a>
+            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>CORINNE RELOJ
+             <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
@@ -51,7 +51,7 @@
         <div class="project_header">
             <h2 class="module_title">Ongoing Projects</h2>
 
-            <a href=""><button class="default_button page_button" >Create New Project</button></a>
+            <a href="createproject.php"><button class="default_button page_button" >Create New Project</button></a>
 
         </div>
         <div class="project_cards">

@@ -49,4 +49,16 @@
   }
 }
 
-
+#new_pass, #confirm_pass{
+  width: rem(250);
+  display: block;
+  height: rem(30);
+  border-width: rem(2);
+  font-size: rem(16);
+  margin: 0 auto rem(25);
+  padding: rem(5);
+  
+  @include tablet{
+    width: rem(450);
+  }
+}

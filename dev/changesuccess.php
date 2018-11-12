@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Collabable</title>
@@ -11,15 +12,13 @@
 <div class ="line_layout">
     <div class="dot_pattern"></div>
     <img class="logo" src="assets/images/unifield_logo.png">
-    <h1 class="forgetpass_title">Forgot Password</h1>
+    <h1 class="forgetpass_title">Change Password</h1>
 
-    <form action="passwordsent.php" method="POST" class="form_layout">
-        <input type="text" name="email" id="emailadd" placeholder="Enter Email Address">
-        <div class = "forget_buttons">
-            <button class="default_button" formaction="index.php">Back</button>
-
-            <button class="default_button confirm_button" type="submit">Confirm</button>
+    <form action="index.php" method="POST" class="form_layout">
+        <div class="email_message">
+            Password Change Successful.
         </div>
+        <button class="default_button" type="submit">Back to Login Page</button>
     </form>
 </div>
 

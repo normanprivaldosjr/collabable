@@ -30,16 +30,16 @@
   }
 
   @include tablet{  
-    width: 40vw;
+    width: 45vw;
     margin-left: 32vw;
     padding: rem(30);
 
     input{
-      width: 40vw;
+      width: 45vw;
     }
 
     select{
-      width: 40vw;
+      width: 45vw;
     }
 
     h4{
@@ -63,7 +63,7 @@
   font-weight: bold;
 
   @include tablet{  
-    width: 40vw;
+    width: 45vw;
     margin-top: 18vh;
     margin-left: 32vw;
     padding: rem(10) rem(30);
@@ -85,15 +85,15 @@
     margin-bottom: rem(5);
     box-shadow: none;
     width: rem(192);
-    background-color: $color-grey-button;  
-    color: $color-black;
-    border: 3px solid $color-grey-border;
+    background-color: $color-red-button;  
+    color: $color-white;
+    // border: 3px solid $color-grey-border;
   }
 
   @include tablet{  
     display: grid;    
     grid-template-columns: auto auto;
-    width: 40vw;
+    width: 50vw;
     
     h4{
       font-size: rem(14);
@@ -104,11 +104,11 @@
     }
 
     .cancel_project{
-      border-right: 1px solid $color-grey-border;
+      border-right: 1px solid $color-white;
     }
 
     .create_project{
-      border-left: 1px solid $color-grey-border;
+      border-left: 1px solid $color-white;
     }
   }
 }
@@ -121,35 +121,10 @@
   padding: rem(15);
   font-family: $font-default;
   font-size: rem(13);
+  margin-bottom: rem(20);
 
   @include tablet{
-    width: 40vw;
-  }
-}
-
-#new-project_members{
-  @include tablet{
-    width: 40vw;
-  }
-
-  @include desktop{
-    width: 26vw;
-  }
-}
-
-.add_member{
-  box-shadow: none;
-  width: 60vw;
-  margin-top: rem(10);
-  
-  @include tablet{
-    width: 40vw;
-    margin-top: rem(15);
-  }
-
-  @include desktop{
-    width: 11vw;
-    margin-left: rem(26);
+    width: 45vw;
   }
 }
 
@@ -192,5 +167,84 @@
 
 }
 
+#example{
+  padding-top: rem(10);
+  font-size: rem(12);
+  width: 60vw;
 
+  @include tablet{  
+    width: 45vw;
+  }
 
+  
+}
+
+#example_wrapper{
+  font-size: rem(12);
+  select{
+    width: 16vw;
+    @include tablet{
+      width: 5vw;
+    }
+  }
+
+  input{
+    margin-left: 0;
+
+    @include tablet{
+      width: 17vw;
+    }
+  }
+
+  .dt-checkboxes{
+    width: rem(15);
+  }
+
+  .dt-checkboxes-select-all > input{
+    width: rem(15);
+  }
+}
+
+#example_paginate{
+  display: flex;
+  width: 100%;
+
+  span{
+    height: rem(30);
+    background-color: transparent;
+    margin: 0 auto;
+    display: inherit;
+
+    a{
+      padding-right: rem(18);
+    }
+  }
+}
+
+.dataTables_info{
+  display: none;
+}
+
+#example_previous, #example_next{
+  display: none;
+
+  @include tablet{
+    display: inline-block;
+  }
+}
+
+#example_filter{
+  margin-top: rem(20);
+  margin-bottom: rem(20);
+
+  @include tablet{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  label > input{
+    @include tablet{
+      margin-left: rem(10);  
+    }
+  }
+}
