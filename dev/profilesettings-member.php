@@ -24,13 +24,13 @@
             COLLABABLE
         </div>
         <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>
+            <a href="profilesettings-member.php"><?php echo $_SESSION['userName']; ?>
                 <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
             <ul>
-                <li class=""><a href="homepage.php">Home</a></li>
+                <li class=""><a href="homepage-member.php">Home</a></li>
             </ul>
         </div>
         <a href="index.php">

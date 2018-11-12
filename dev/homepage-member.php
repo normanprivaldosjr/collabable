@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -18,8 +24,8 @@
             COLLABABLE
         </div>
         <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>CORINNE RELOJ
-             <img src="assets/images/edit_icon.png" class="edit_icon"></a>
+            <a href="profilesettings-member.php"><?php echo $_SESSION['userName']; ?>
+                <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">

@@ -8,7 +8,7 @@
         $stmt->store_result();
         if($stmt->num_rows > 0){
             $_SESSION['ID'] = "set";
-            $stmt->bind_result($employeeId, $employeeName, $employeeUserName, $employeePassWord , $employeeEmailAddress, $employeeContactNum , $employeeAddress, $employeeRole);
+            $stmt->bind_result($employeeId, $employeeName, $employeeUserName, $employeePassWord , $employeeEmailAddress, $employeeContactNum , $employeeRole);
             if($stmt->fetch()){
                 $_SESSION['userId'] = $employeeId;
                 $_SESSION['userName'] = $employeeName;

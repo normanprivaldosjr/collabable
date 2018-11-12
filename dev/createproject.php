@@ -1,7 +1,7 @@
 <?php
-    session_start();
-?>
+session_start();
 
+?>
 
 <html>
 <head>
@@ -16,19 +16,19 @@
     <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
 
-    
+
     <script type="text/javascript">
         $(document).ready(function() {
-       var table = $('#example').DataTable({
-          'columnDefs': [
-             {
-                'targets': 0,
-                'checkboxes': true
-             }
-          ],
-          'order': [[1, 'asc']]
-       });
-    });
+            var table = $('#example').DataTable({
+                'columnDefs': [
+                    {
+                        'targets': 0,
+                        'checkboxes': true
+                    }
+                ],
+                'order': [[1, 'asc']]
+            });
+        });
 
     </script>
 </head>
@@ -44,8 +44,8 @@
             COLLABABLE
         </div>
         <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>CORINNE RELOJ
-             <img src="assets/images/edit_icon.png" class="edit_icon"></a>
+            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>
+                <img src="assets/images/edit_icon.png" class="edit_icon"></a>
         </h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <form action="profilesettings.php">
+        <form method="POST">
             <div class="form_title">
                 Create New Project
             </div>
@@ -87,117 +87,31 @@
                 <!-- <input type="text" name="new-project_members" id="new-project_members" placeholder="Search for members...">
                 <button class="add_member" name="add_member">ADD MEMBER</button> -->
                 <table id="example" class="display" cellspacing="0" width="100%">
-                   <thead>
-                      <tr>
-                         <th></th>
-                         <th>Name</th>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    <?php
+
+                    require_once "config.php";
+
+                    $query = "SELECT employeeName FROM users";
+                    $result = mysqli_query($mysqli, $query);
+
+                    while($row = mysqli_fetch_assoc($result)){
+                        $name = $row['employeeName'];
+                    ?>
+                    <tr>
+                        <td></td>
+                        <td><?php echo $name; ?></td>
                     </tr>
-                   </thead>
-                   <tbody>
-                       <tr>
-                           <td>1</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>2</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>3</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                        <tr>
-                           <td>4</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>5</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>6</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                        <tr>
-                           <td>7</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>8</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>9</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                        <tr>
-                           <td>10</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>1</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>2</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>3</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                       <tr>
-                           <td>1</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>2</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>3</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                        <tr>
-                           <td>4</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>5</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>6</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                        <tr>
-                           <td>7</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>8</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>9</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
-                        <tr>
-                           <td>10</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>1</td>
-                           <td>Tiger Nixon</td>
-                        </tr>
-                        <tr>
-                           <td>2</td>
-                           <td>Corinne Reloj</td>
-                        </tr>
-                        <tr>
-                           <td>3</td>
-                           <td>Aloysius Chua</td>
-                        </tr>
+
+                    <?php   }  ?>
+
                     </tbody>
                 </table>
 
@@ -207,13 +121,13 @@
                 <div class="lifecycle">
                     <div class="phases">
                         <h4>Phases</h4>
-                        <input type="text" name="new-project_phases" class="new-project_phases" value="Initiation">
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Initiation" readonly>
 
-                        <input type="text" name="new-project_phases" class="new-project_phases" value="Planning">
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Planning" readonly>
 
-                        <input type="text" name="new-project_phases" class="new-project_phases" value="Execution">
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Execution" readonly>
 
-                        <input type="text" name="new-project_phases" class="new-project_phases" value="Closing">
+                        <input type="text" name="new-project_phases" class="new-project_phases" value="Closing" readonly>
                     </div>
 
                     <div class="estimation">
@@ -239,7 +153,7 @@
                 <div class="form_buttons">
                     <button class="cancel_project">Cancel</button>
 
-                    <button class="create_project" type="submit">Confirm</button>
+                    <button class="create_project" type="submit" id="submit" name="submit">Confirm</button>
                 </div>
             </div>
         </form>

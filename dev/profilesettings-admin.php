@@ -23,14 +23,12 @@
         <div class="logo_box sidebar_title">
             COLLABABLE
         </div>
-        <h4 class="member_name">
-            <a href="profilesettings.php"><?php echo $_SESSION['userName']; ?>
-                <img src="assets/images/edit_icon.png" class="edit_icon"></a>
-        </h4>
+        <h4 class="member_name"><a href="profilesettings-admin.php"><?php echo $_SESSION['userName'];  ?></a></h4>
         <div class="sidebar_divider"></div>
         <div class="sidebar_content">
             <ul>
-                <li class=""><a href="homepage.php">Home</a></li>
+                <li class=""><a href="homepage-admin.php">Home</a></li>
+                <li><a href="">Users</a></li>
             </ul>
         </div>
         <a href="index.php">
