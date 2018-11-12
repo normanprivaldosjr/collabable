@@ -1,7 +1,6 @@
 <?php
-
     session_start();
-
+    require_once "config.php";
 ?>
 
 <html>
@@ -54,18 +53,25 @@
             <h2 class="module_title">Ongoing Projects</h2>
         </div>
         <div class="project_cards">
-            <a href="">
-                <div class="open-project">Project 1</div>
-            </a>
-            <a href="">
-                <div class="open-project">Project 2</div>
-            </a>
-            <a href="">
-                <div class="open-project">Project 3</div>
-            </a>
-            <a href="">
-                <div class="open-project">Project 4</div>
-            </a>
+
+            <?php
+
+            require_once "config.php";
+
+            $query = "SELECT projectId, projectName FROM project where isActive=1";
+            $result = mysqli_query($mysqli, $query);
+
+            while($row = mysqli_fetch_assoc($result)){
+                $id = $row['projectId'];
+                $name = $row['projectName'];
+                ?>
+
+                <a href="">
+                    <div class="open-project"><?php echo $name; ?></div>
+                </a>
+
+            <?php   }  ?>
+
         </div>
 
         <div class="project_header">
@@ -73,15 +79,25 @@
         </div>
 
         <div class="project_cards">
-            <a href="">
-                <div class="close-project">Project 5</div>
-            </a>
-            <a href="">
-                <div class="close-project">Project 6</div>
-            </a>
-            <a href="">
-                <div class="close-project">Project 7</div>
-            </a>
+
+            <?php
+
+            require_once "config.php";
+
+            $query = "SELECT projectId, projectName FROM project where isActive=0";
+            $result = mysqli_query($mysqli, $query);
+
+            while($row = mysqli_fetch_assoc($result)){
+                $id = $row['projectId'];
+                $name = $row['projectName'];
+                ?>
+
+                <a href="">
+                    <div class="close-project"><?php echo $name; ?></div>
+                </a>
+
+            <?php   }  ?>
+
         </div>
 
     </div>

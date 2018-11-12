@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require "createProjectController.php";
 ?>
 
 <html>
@@ -23,7 +23,7 @@ session_start();
                 'columnDefs': [
                     {
                         'targets': 0,
-                        'checkboxes': true
+
                     }
                 ],
                 'order': [[1, 'asc']]
@@ -80,14 +80,14 @@ session_start();
                 <input type="text" name="new-project_title" id="new-project_title" value="">
 
                 <h4>Description</h4>
-                <textarea class="new-project_description"></textarea>
+                <textarea class="new-project_description" name="new-project_description"></textarea>
 
 
                 <h4>Add Members</h4>
                 <!-- <input type="text" name="new-project_members" id="new-project_members" placeholder="Search for members...">
                 <button class="add_member" name="add_member">ADD MEMBER</button> -->
                 <table id="example" class="display" cellspacing="0" width="100%">
-                    <thead>
+                    <thead class=".dt-checkboxes .dt-checkboxes-select-all">
                         <tr>
                             <th></th>
                             <th>Name</th>
@@ -99,14 +99,15 @@ session_start();
 
                     require_once "config.php";
 
-                    $query = "SELECT employeeName FROM users";
+                    $query = "SELECT employeeId, employeeName FROM users";
                     $result = mysqli_query($mysqli, $query);
 
                     while($row = mysqli_fetch_assoc($result)){
+                        $id = $row['employeeId'];
                         $name = $row['employeeName'];
                     ?>
                     <tr>
-                        <td></td>
+                        <td><input type="checkbox" name="members[]" value="<?php echo $id; ?>"></td>
                         <td><?php echo $name; ?></td>
                     </tr>
 
@@ -114,8 +115,6 @@ session_start();
 
                     </tbody>
                 </table>
-
-
 
                 <h4 style="margin-top: 35">Estimated Life Cycle</h4>
                 <div class="lifecycle">
