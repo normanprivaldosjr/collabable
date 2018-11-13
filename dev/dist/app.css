@@ -205,8 +205,8 @@ span {
   margin-bottom: 1.25rem; }
   @media (min-width: 768px) {
     .module_title {
-      font-size: 1.8vw;
-      text-shadow: 0.75rem 0.5rem rgba(0, 0, 0, 0.2); } }
+      font-size: 1.5625rem;
+      text-shadow: 0.3125rem 0.5rem rgba(0, 0, 0, 0.14); } }
 
 .project_header {
   margin-left: -2.5rem;
@@ -359,7 +359,7 @@ main {
       margin-left: 15vw;
       margin-right: 3vw;
       max-width: 18.75rem;
-      width: 100vw; } }
+      width: 25vw; } }
 
 .project_cards {
   display: grid;
@@ -379,10 +379,10 @@ main {
   .project_cards .open-project {
     background-color: #ef5145ff;
     margin: 1.5625rem;
-    box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.1); }
   .project_cards .close-project {
     margin: 1.5625rem;
-    box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0.9375rem 0.625rem rgba(0, 0, 0, 0.1);
     background-color: #434343; }
 
 .profile_settings {
@@ -425,14 +425,14 @@ main {
     font-size: 0.75rem; }
   @media (min-width: 768px) {
     .profile_content {
-      width: 40vw;
+      width: 45vw;
       margin-top: 18vh;
       margin-left: 32vw;
       padding: 2.5rem; }
       .profile_content input {
-        width: 40vw; }
+        width: 45vw; }
       .profile_content select {
-        width: 40vw; }
+        width: 45vw; }
       .profile_content h4 {
         font-size: 0.875rem; } }
 
@@ -442,7 +442,7 @@ main {
   margin-top: 1.25rem; }
   @media (min-width: 768px) {
     .save_changes {
-      width: 30vw;
+      width: 35vw;
       margin-top: 2.5rem; } }
 
 .form_content {
@@ -529,7 +529,9 @@ main {
       .form_buttons .create_project {
         border-left: 1px solid #fff; } }
 
-.new-project_description {
+.new-project_description,
+.closed-project_description,
+.closed-project_lessons {
   width: 60vw;
   border: none;
   background-color: #e8e8e8;
@@ -539,7 +541,9 @@ main {
   font-size: 0.8125rem;
   margin-bottom: 1.25rem; }
   @media (min-width: 768px) {
-    .new-project_description {
+    .new-project_description,
+    .closed-project_description,
+    .closed-project_lessons {
       width: 45vw; } }
 
 @media (min-width: 768px) {
@@ -615,5 +619,15 @@ main {
       #example_filter label > input {
         margin-left: 0.625rem;
         width: 17vw; } }
+
+#date_closed {
+  margin-bottom: 2.5rem; }
+  @media (min-width: 768px) {
+    #date_closed {
+      display: flex;
+      margin-bottom: 1.875rem; } }
+  @media (min-width: 768px) {
+    #date_closed #date_closed-header {
+      width: 37%; } }
 
 /*# sourceMappingURL=app.css.map */

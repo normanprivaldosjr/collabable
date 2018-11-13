@@ -11,7 +11,7 @@ main{
   	margin-left: 15vw;
   	margin-right: 3vw;
     max-width: rem(300);
-    width: 100vw;
+    width: 25vw;
   }
 }
 
@@ -37,12 +37,12 @@ main{
   .open-project{
   	background-color: $color-red-button;
   	margin: rem(25);
-		box-shadow: rem(15) rem(10) rgba(0,0,0, 0.3); 
+		box-shadow: rem(15) rem(10) rgba(0,0,0, 0.1); 
   }
 
   .close-project{
   	margin: rem(25);
-  	box-shadow: rem(15) rem(10) rgba(0,0,0, 0.3); 
+  	box-shadow: rem(15) rem(10) rgba(0,0,0, 0.1); 
   	background-color: $color-dark-grey-sidebar;
 	}
 }

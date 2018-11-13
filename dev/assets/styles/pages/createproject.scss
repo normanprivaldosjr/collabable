@@ -113,7 +113,9 @@
   }
 }
 
-.new-project_description{
+.new-project_description, 
+.closed-project_description,
+.closed-project_lessons{
   width: 60vw;
   border: none;
   background-color: $color-grey-input;

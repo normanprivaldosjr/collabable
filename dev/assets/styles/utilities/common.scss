@@ -247,8 +247,8 @@ span{
   margin-bottom: rem(20);
   
   @include tablet{
-    font-size: 1.8vw;
-    text-shadow: rem(12) rem(8) rgba(0,0,0, 0.2);
+    font-size: rem(25);
+    text-shadow: rem(5) rem(8) rgba(0,0,0, 0.14);
   }
 
 }
@@ -280,3 +280,4 @@ span{
 .edit_icon{
   width: rem(15);
 }
+

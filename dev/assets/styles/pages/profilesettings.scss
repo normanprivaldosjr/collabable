@@ -46,17 +46,17 @@
   }
 
   @include tablet{  
-    width: 40vw;
+    width: 45vw;
     margin-top: 18vh;
     margin-left: 32vw;
     padding: rem(40);
 
     input{
-      width: 40vw;
+      width: 45vw;
     }
 
     select{
-      width: 40vw;
+      width: 45vw;
     }
 
     h4{
@@ -71,7 +71,8 @@
   margin-top: rem(20);
 
   @include tablet{
-    width: 30vw;
+    width: 35vw;
     margin-top: rem(40);
   }
 }
+
