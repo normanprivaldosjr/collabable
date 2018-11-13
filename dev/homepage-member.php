@@ -1,6 +1,26 @@
 <?php
-
+require_once "config.php";
 session_start();
+$ID = $_SESSION['userId'];
+$project = "";
+$project1 = "";
+$query = "SELECT * FROM project";
+$result = mysqli_query($mysqli, $query);
+
+while($row = mysqli_fetch_assoc($result)) {
+    $member = $row['projectMembers'];
+    $projName = $row['projectName'];
+    $arr = array();
+    $arr = explode(",", $member);
+    $cnt = count($arr);
+    for ($i = 0; $i < $cnt; $i++) {
+        if($row['isActive'] == 1 && $arr[$i] == $ID){
+            $project .= "<a href=''><div class='open-project'>" . $projName ."</div></a>";
+        }else if($row['isActive'] == 0 && $arr[$i] == $ID){
+            $project1 .= "<a href=''><div class='close-project'>" . $projName ."</div></a>";
+        }
+    }
+}
 
 ?>
 
@@ -52,18 +72,7 @@ session_start();
             <h2 class="module_title">Ongoing Projects</h2>
         </div>
         <div class="project_cards">
-            <a href="">
-                <div class="open-project">Project 1</div>
-            </a>
-            <a href="">
-                <div class="open-project">Project 2</div>
-            </a>
-            <a href="">
-                <div class="open-project">Project 3</div>
-            </a>
-            <a href="">
-                <div class="open-project">Project 4</div>
-            </a>
+            <?php echo $project; ?>
         </div>
 
         <div class="project_header">
@@ -71,15 +80,7 @@ session_start();
         </div>
 
         <div class="project_cards">
-            <a href="">
-                <div class="close-project">Project 5</div>
-            </a>
-            <a href="">
-                <div class="close-project">Project 6</div>
-            </a>
-            <a href="">
-                <div class="close-project">Project 7</div>
-            </a>
+            <?php echo $project1; ?>
         </div>
 
     </div>

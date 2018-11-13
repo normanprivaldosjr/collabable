@@ -1,6 +1,21 @@
 <?php
-    session_start();
     require_once "config.php";
+    session_start();
+    $project1 = "";
+    $project = "";
+    $query = "SELECT * FROM project";
+    $result = mysqli_query($mysqli, $query);
+
+    while($row = mysqli_fetch_assoc($result)){
+        $id = $row['projectId'];
+        $name = $row['projectName'];
+
+        if($row['isActive'] == 1){
+            $project .= "<a href=''><div class='open-project'>" . $name ."</div></a>";
+        }else{
+            $project1 .= "<a href=''><div class='close-project'>" . $name ."</div></a>";
+        }
+    }
 ?>
 
 <html>
@@ -53,25 +68,7 @@
             <h2 class="module_title">Ongoing Projects</h2>
         </div>
         <div class="project_cards">
-
-            <?php
-
-            require_once "config.php";
-
-            $query = "SELECT projectId, projectName FROM project where isActive=1";
-            $result = mysqli_query($mysqli, $query);
-
-            while($row = mysqli_fetch_assoc($result)){
-                $id = $row['projectId'];
-                $name = $row['projectName'];
-                ?>
-
-                <a href="">
-                    <div class="open-project"><?php echo $name; ?></div>
-                </a>
-
-            <?php   }  ?>
-
+            <?php echo $project ?>
         </div>
 
         <div class="project_header">
@@ -79,25 +76,7 @@
         </div>
 
         <div class="project_cards">
-
-            <?php
-
-            require_once "config.php";
-
-            $query = "SELECT projectId, projectName FROM project where isActive=0";
-            $result = mysqli_query($mysqli, $query);
-
-            while($row = mysqli_fetch_assoc($result)){
-                $id = $row['projectId'];
-                $name = $row['projectName'];
-                ?>
-
-                <a href="">
-                    <div class="close-project"><?php echo $name; ?></div>
-                </a>
-
-            <?php   }  ?>
-
+            <?php echo $project1 ?>
         </div>
 
     </div>
