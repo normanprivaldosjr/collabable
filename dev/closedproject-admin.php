@@ -51,6 +51,7 @@ require "createProjectController.php";
         <div class="sidebar_content">
             <ul>
                 <li class=""><a href="homepage.php">Home</a></li>
+                <li><a href="">Users</a></li>
             </ul>
         </div>
         <a href="index.php">
@@ -96,7 +97,7 @@ require "createProjectController.php";
                         </tr>
                     </thead>
                     <tbody>
-                                        <!-- <tr>
+                    <!-- <tr>
                         <td><input type="checkbox"style="width: 4.3vw;"></td>
                         <td>Corinne Reloj</td>
                     </tr>                    
