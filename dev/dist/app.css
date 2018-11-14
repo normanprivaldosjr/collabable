@@ -188,8 +188,8 @@ footer {
       display: none; } }
 
 span {
-  height: 0.5rem;
-  width: 2.5rem;
+  height: 0.375rem;
+  width: 2.125rem;
   margin: 0.1875rem;
   background-color: #434343;
   display: block; }
@@ -427,7 +427,7 @@ main {
     .profile_content {
       width: 45vw;
       margin-top: 18vh;
-      margin-left: 32vw;
+      margin-left: 29vw;
       padding: 2.5rem; }
       .profile_content input {
         width: 45vw; }
@@ -435,6 +435,9 @@ main {
         width: 45vw; }
       .profile_content h4 {
         font-size: 0.875rem; } }
+  @media (min-width: 1200px) {
+    .profile_content {
+      margin-left: 32vw; } }
 
 .save_changes {
   box-shadow: none;
@@ -629,5 +632,125 @@ main {
   @media (min-width: 768px) {
     #date_closed #date_closed-header {
       width: 37%; } }
+
+.users_table {
+  background-color: #fff;
+  border: 3px solid #b7b7b7;
+  margin-bottom: 5vw;
+  overflow-x: auto;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 25vh;
+  margin-right: 0.375rem;
+  padding: 1.25rem 0; }
+  .users_table input {
+    width: 60vw;
+    border: none;
+    background-color: #e8e8e8;
+    height: 1.25rem;
+    padding: 0.9375rem; }
+  .users_table select {
+    width: 60vw;
+    padding: 0.40625rem;
+    border: none;
+    background-color: #e8e8e8; }
+  .users_table .update_user, .users_table .deactivate_user {
+    padding: 0.5rem;
+    height: 1.875rem;
+    box-shadow: none;
+    font-size: 0.75rem; }
+  .users_table .deactivate_user {
+    background-color: #434343; }
+  .users_table .dataTable {
+    width: 60vw; }
+  @media (min-width: 768px) {
+    .users_table #example_filter > label > input {
+      margin-left: 0.625rem;
+      width: 30vw;
+      margin-right: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .users_table #example_filter > label > input {
+      margin-left: 0.625rem;
+      margin-right: 0;
+      width: 22vw; } }
+  @media (min-width: 768px) {
+    .users_table #example_paginate {
+      margin-right: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .users_table #example_paginate {
+      margin-right: 0; } }
+  @media (min-width: 768px) {
+    .users_table #example_previous {
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .users_table #example_previous {
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .users_table #example_wrapper {
+      width: fit-content; } }
+  @media (min-width: 768px) {
+    .users_table #example_length {
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .users_table #example_length {
+      margin-left: 0; } }
+  @media (min-width: 768px) {
+    .users_table {
+      width: 70vw;
+      margin-top: 18vh;
+      margin-left: 23vw;
+      margin-right: 0; }
+      .users_table input {
+        width: 45vw; }
+      .users_table select {
+        width: 45vw; } }
+  @media (min-width: 1200px) {
+    .users_table {
+      padding: 1.25rem;
+      margin-left: 20vw; } }
+
+.update_content {
+  display: block;
+  width: 65vw;
+  background-color: #fff;
+  border: 3px solid #efefefff;
+  padding: 3.125rem 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0.9375rem 0.625rem #ef5145ff;
+  margin-top: 31vh;
+  margin-bottom: 5vw; }
+  .update_content input {
+    width: 60vw;
+    border: none;
+    background-color: #e8e8e8;
+    height: 1.25rem;
+    padding: 0.9375rem; }
+  .update_content select {
+    width: 60vw;
+    padding: 0.40625rem;
+    border: none;
+    background-color: #e8e8e8; }
+  .update_content h4 {
+    text-align: left;
+    margin: 0.5rem;
+    font-weight: 100;
+    font-size: 0.75rem; }
+  @media (min-width: 768px) {
+    .update_content {
+      width: 45vw;
+      margin-top: 22vh;
+      margin-left: 28vw;
+      padding: 3.75rem; }
+      .update_content input {
+        width: 45vw; }
+      .update_content select {
+        width: 45vw; }
+      .update_content h4 {
+        font-size: 0.875rem; } }
+  @media (min-width: 1200px) {
+    .update_content {
+      margin-left: 31vw; } }
+
+.update_content > .save_changes {
+  margin-top: 5.3125rem; }
 
 /*# sourceMappingURL=app.css.map */

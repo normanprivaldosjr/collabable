@@ -14,7 +14,7 @@
     <h1 class="forgetpass_title">Forgot Password</h1>
 
     <form action="passwordsent.php" method="POST" class="form_layout">
-        <input type="text" name="email" id="emailadd" placeholder="Enter Email Address">
+        <input type="text" name="email" id="emailadd" placeholder="Enter Email Address" required>
         <div class = "forget_buttons">
             <button class="default_button" formaction="index.php">Back</button>
 

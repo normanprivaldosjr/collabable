@@ -48,7 +48,7 @@
   @include tablet{  
     width: 45vw;
     margin-top: 18vh;
-    margin-left: 32vw;
+    margin-left: 29vw;
     padding: rem(40);
 
     input{
@@ -62,6 +62,10 @@
     h4{
       font-size: rem(14);
     }
+  }
+
+  @include desktop{
+    margin-left: 32vw;
   }
 }
 
