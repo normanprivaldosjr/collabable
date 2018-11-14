@@ -41,8 +41,8 @@ if(isset($_POST['login'])){
 
         <form class="form_layout" method="POST">
             <div class="credentials">
-                <input type="text" name="username" id="user" placeholder="Enter Username"> <?php echo "<p>". $user_err . "</p>" ?>
-                <input type="password" name="password" id="pass" placeholder="Enter Password"><?php echo "<p>". $pass_err . "</p>" ?> <?php "<p>". $acc_err . "</p>" ?>
+                <input type="text" name="username" id="user" placeholder="Enter Username" required> <?php echo "<p>". $user_err . "</p>" ?>
+                <input type="password" name="password" id="pass" placeholder="Enter Password" required><?php echo "<p>". $pass_err . "</p>" ?> <?php "<p>". $acc_err . "</p>" ?>
             <button class="default_button" type="submit" name="login">Login</button>
         </form>
 

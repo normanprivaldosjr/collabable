@@ -158,6 +158,8 @@ require "createProjectController.php";
                         <input type="date" name="closed-project_end4" class="closed-project_end4" value="Execution" readonly>
                     </div>
                 </div>
+                
+                <button class="save_changes" type="submit" name="submit">print details</button>
             </div>
         </form>
 

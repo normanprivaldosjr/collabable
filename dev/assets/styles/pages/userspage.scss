@@ -1,0 +1,173 @@
+.users_table{
+  	background-color: $color-white;
+  	border: 3px solid $color-grey-border;
+  	margin-bottom: 5vw;
+  	overflow-x: auto;
+  	font-family: $font-montserrat;
+  	margin-top: 25vh;
+  	margin-right: rem(6);
+  	padding: rem(20) 0;
+
+  	input{
+    	width: 60vw;
+    	border: none;
+    	background-color: $color-grey-input;
+    	height: rem(20);
+    	padding: rem(15);
+  	}
+
+  	select{
+	   width: 60vw;
+	   padding: rem(6.5);
+	   border: none;
+	   background-color: $color-grey-input;
+	}
+
+	.update_user, .deactivate_user{
+		padding: rem(8);
+		height: rem(30);
+		box-shadow: none;
+		font-size: rem(12);
+	}
+
+	.deactivate_user{
+		background-color: $color-dark-grey-sidebar;
+	}
+
+	.dataTable{
+		width: 60vw;
+	}
+
+	#example_filter > label > input{
+
+	    @include tablet{
+	      margin-left: rem(10);  
+	      width: 30vw;
+	      margin-right: rem(20);
+	    }
+
+	    @include desktop{
+	      margin-left: rem(10); 
+	      margin-right: 0; 
+	      width: 22vw;
+	    }
+	}
+
+	#example_paginate{
+		@include tablet{
+	      margin-right: rem(20);
+	    }
+
+	    @include desktop{
+			margin-right: 0;	
+		}
+	}
+
+	#example_previous{
+		@include tablet{
+	      margin-left: rem(20);
+	    }
+
+	    @include desktop{
+			margin-left: 0;	
+		}
+	}
+
+	#example_wrapper{
+		@include tablet{
+			width: fit-content;	
+		}
+	}
+
+	#example_length{
+		@include tablet{
+			margin-left: rem(20);	
+		}
+
+		@include desktop{
+			margin-left: 0;	
+		}
+	}
+
+  	@include tablet{  
+	    width: 70vw;
+	    margin-top: 18vh;
+	    margin-left: 23vw;
+	    margin-right: 0;	
+
+	    input{
+	      width: 45vw;
+	    }
+
+	    select{
+	      width: 45vw;
+	    }
+	}
+
+	@include desktop{
+		padding: rem(20);
+		margin-left: 20vw;
+	}
+}
+
+
+.update_content{
+  display: block;
+  width: 65vw;
+  background-color: $color-white;
+  border: 3px solid $color-grey-box;
+  padding: rem(50) rem(20);
+  font-family: $font-montserrat;
+  box-shadow: rem(15) rem(10) $color-red-button;
+  margin-top: 31vh;
+  margin-bottom: 5vw;
+
+  input{
+    width: 60vw;
+    border: none;
+    background-color: $color-grey-input;
+    height: rem(20);
+    padding: rem(15);
+  }
+
+  select{
+    width: 60vw;
+    padding: rem(6.5);
+    border: none;
+    background-color: $color-grey-input;
+  }
+
+  h4{
+    text-align: left;
+    margin: rem(8);
+    font-weight: 100;
+    font-size: rem(12);
+  }
+
+  @include tablet{  
+    width: 45vw;
+    margin-top: 22vh;
+    margin-left: 28vw;
+    padding: rem(60);
+
+    input{
+      width: 45vw;
+    }
+
+    select{
+      width: 45vw;
+    }
+
+    h4{
+      font-size: rem(14);
+    }
+  }
+
+  @include desktop{
+    margin-left: 31vw;
+  }
+}
+
+.update_content > .save_changes{
+	margin-top: rem(85);
+}

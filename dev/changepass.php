@@ -14,8 +14,8 @@
     <h1 class="forgetpass_title">Change Password</h1>
 
     <form action="changesuccess.php" method="POST" class="form_layout">
-        <input type="text" name="new_pass" id="new_pass" placeholder="Enter New Password">
-        <input type="text" name="confirm_pass" id="confirm_pass" placeholder="Confirm New Password">
+        <input type="text" name="new_pass" id="new_pass" placeholder="Enter New Password" required>
+        <input type="text" name="confirm_pass" id="confirm_pass" placeholder="Confirm New Password" required>
         <div class = "forget_buttons">
             <button class="default_button" formaction="index.php">Cancel</button>
 

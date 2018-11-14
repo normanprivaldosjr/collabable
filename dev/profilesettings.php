@@ -55,19 +55,19 @@
         <form method="POST">
             <div class="profile_content">
                 <h4>Name</h4>
-                <input type="text" name="settings_name" id="settings_name" value="<?php echo $empName;?>">
+                <input type="text" name="settings_name" id="settings_name" value="<?php echo $empName;?>" required>
 
                 <h4>Username</h4>
-                <input type="text" name="settings_user" id="settings_user" value="<?php echo $empUserName;?>">
+                <input type="text" name="settings_user" id="settings_user" value="<?php echo $empUserName;?>" required>
 
                 <h4>Password</h4>
-                <input type="password" name="settings_pass" id="settings_pass" value="<?php echo $empPassword;?>">
+                <input type="password" name="settings_pass" id="settings_pass" value="<?php echo $empPassword;?>" required>
 
                 <h4>Email</h4>
-                <input type="text" name="settings_email" id="settings_email" value="<?php echo $empEmailAdd;?>">
+                <input type="text" name="settings_email" id="settings_email" value="<?php echo $empEmailAdd;?>" required>
 
                 <h4>Contact Number</h4>
-                <input type="text" name="settings_contact" id="settings_contact" value="<?php echo $empContactNum;?>">
+                <input type="text" name="settings_contact" id="settings_contact" value="<?php echo $empContactNum;?>" required>
 
                 <h4>Privilege</h4>
                 <input type="text" name="settings_privilege" id="settings_privilege"value="<?php echo $empRole;?>" readonly>

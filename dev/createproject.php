@@ -77,10 +77,10 @@ require "createProjectController.php";
             </div>
             <div class="form_content">
                 <h4>Title</h4>
-                <input type="text" name="new-project_title" id="new-project_title" value="">
+                <input type="text" name="new-project_title" id="new-project_title" value="" required>
 
                 <h4>Description</h4>
-                <textarea class="new-project_description" name="new-project_description"></textarea>
+                <textarea class="new-project_description" name="new-project_description" required></textarea>
 
 
                 <h4>Add Members</h4>
@@ -131,21 +131,21 @@ require "createProjectController.php";
 
                     <div class="estimation">
                         <h4 class="estimated_date">Estimated Date</h4>
-                        <input type="date" name="new-project_start1" class="new-project_start1" value="Execution">
+                        <input type="date" name="new-project_start1" class="new-project_start1" value="Execution" required>
                         -
-                        <input type="date" name="new-project_end1" class="new-project_end1" value="Execution">
+                        <input type="date" name="new-project_end1" class="new-project_end1" value="Execution" required>
 
-                        <input type="date" name="new-project_start2" class="new-project_start2" value="Execution">
+                        <input type="date" name="new-project_start2" class="new-project_start2" value="Execution" required>
                         -
-                        <input type="date" name="new-project_end2" class="new-project_end2" value="Execution">
+                        <input type="date" name="new-project_end2" class="new-project_end2" value="Execution" required>
 
-                        <input type="date" name="new-project_start3" class="new-project_start3" value="Execution">
+                        <input type="date" name="new-project_start3" class="new-project_start3" value="Execution" required>
                         -
-                        <input type="date" name="new-project_end3" class="new-project_end3" value="Execution">
+                        <input type="date" name="new-project_end3" class="new-project_end3" value="Execution" required>
 
-                        <input type="date" name="new-project_start4" class="new-project_start4" value="Execution">
+                        <input type="date" name="new-project_start4" class="new-project_start4" value="Execution" required>
                         -
-                        <input type="date" name="new-project_end4" class="new-project_end4" value="Execution">
+                        <input type="date" name="new-project_end4" class="new-project_end4" value="Execution" required>
                     </div>
                 </div>
 
