@@ -90,10 +90,8 @@ require "createProjectController.php";
                 <h4>Members</h4>
                 <table id="example" class="display" cellspacing="0" width="100%">
                     <thead>
-                        <tr>
-                            <th style="width: 4.3vw;"></th>
-                            <th>Name</th>
-                        </tr>
+                        <th style="width: 4.3vw;"></th>
+                        <th style="width: 40vw;">Name</th>
                     </thead>
                     <tbody>
                                         <!-- <tr>
@@ -117,8 +115,8 @@ require "createProjectController.php";
                         $name = $row['employeeName'];
                     ?>
                     <tr>
-                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>"></td>
-                        <td><?php echo $name; ?></td>
+                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>" style="width: 4.3vw;"></td>
+                        <td style="width: 40vw;"><?php echo $name; ?></td>
                     </tr>
 
                     <?php   }  ?>

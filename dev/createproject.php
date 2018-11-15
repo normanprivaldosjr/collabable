@@ -90,11 +90,19 @@ require "createProjectController.php";
                     <thead>
                     <tr>
                         <th style="width: 4.3vw;"></th>
-                        <th>Name</th>
+                        <th style="width: 40vw;">Name</th>
                     </tr>
                     </thead>
                     <tbody>
-
+                    <!-- <tr>
+                        <td><input type="checkbox"style="width: 4.3vw;"></td>
+                        <td>Corinne Reloj</td>
+                    </tr>                    
+                    <tr>
+                        <td style="width: 4.3vw;"><input type="checkbox"style="width: 4.3vw;"></td>
+                        <td style="width: 40vw;">Aloy Chua</td>
+                    </tr>
+                     -->
                     <?php
 
                     require_once "config.php";
@@ -107,8 +115,8 @@ require "createProjectController.php";
                         $name = $row['employeeName'];
                     ?>
                     <tr>
-                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>"></td>
-                        <td><?php echo $name; ?></td>
+                        <td style="width: 4.3vw;"><input type="checkbox" name="members[]" value="<?php echo $id; ?>" style="width: 4.3vw;"></td>
+                        <td style="width: 40vw;"><?php echo $name; ?></td>
                     </tr>
 
                     <?php   }  ?>
