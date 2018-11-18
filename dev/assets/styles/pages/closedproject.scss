@@ -1,14 +1,18 @@
-#date_closed{
-  margin-bottom: rem(40);
+#date_closed, #user_closed{
+  margin-top: rem(15);
 
   @include tablet{
     display: flex;
-    margin-bottom: rem(30);
   }
 
-  #date_closed-header{
+  #date_closed-header, #user_closed-header{
     @include tablet{
       width: 37%;
     }
   }
+
+}
+
+#date_closed{
+  margin-bottom: rem(20);
 }
