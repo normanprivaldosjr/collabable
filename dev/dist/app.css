@@ -755,4 +755,115 @@ main {
 .update_content > .save_changes {
   margin-top: 5.3125rem; }
 
+.doughnut_chart {
+  display: block;
+  margin-top: 1.875rem; }
+  @media (min-width: 768px) {
+    .doughnut_chart {
+      width: 70vw;
+      margin-left: 23vw;
+      margin-right: 0; } }
+  @media (min-width: 1200px) {
+    .doughnut_chart {
+      margin-top: 0;
+      display: flex;
+      padding: 1.25rem;
+      margin-left: 20vw; } }
+  .doughnut_chart .doughnut_size {
+    width: 76vw;
+    padding-bottom: 1.25rem;
+    margin-left: -0.15625rem;
+    background-color: #fff;
+    border: 0.0625rem solid #434343; }
+    @media (min-width: 768px) {
+      .doughnut_chart .doughnut_size {
+        width: 67vw; } }
+    @media (min-width: 1200px) {
+      .doughnut_chart .doughnut_size {
+        width: 70vw;
+        margin: auto; } }
+  .doughnut_chart .doughnut_content {
+    font-size: 0.8125rem;
+    display: block;
+    width: 60vw;
+    background-color: #fff;
+    border: 3px solid #efefefff;
+    padding: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0.9375rem 0.625rem #ef5145ff;
+    margin-top: 1.875rem; }
+    @media (min-width: 768px) {
+      .doughnut_chart .doughnut_content {
+        width: 54vw;
+        padding: 2.5rem; } }
+    @media (min-width: 1200px) {
+      .doughnut_chart .doughnut_content {
+        padding: 1.875rem;
+        margin-top: 0;
+        margin-left: 2.5rem; } }
+    .doughnut_chart .doughnut_content p {
+      color: #000000;
+      margin-top: 1.875rem; }
+    .doughnut_chart .doughnut_content .delayed_container {
+      margin-top: 1.875rem;
+      display: block; }
+      @media (min-width: 768px) {
+        .doughnut_chart .doughnut_content .delayed_container {
+          display: flex; } }
+      .doughnut_chart .doughnut_content .delayed_container input {
+        display: flex;
+        margin-left: 1.25rem;
+        flex: 1;
+        width: 80%; }
+        @media (min-width: 768px) {
+          .doughnut_chart .doughnut_content .delayed_container input {
+            width: 1.875rem; } }
+        @media (min-width: 1200px) {
+          .doughnut_chart .doughnut_content .delayed_container input {
+            width: 3.125rem; } }
+    .doughnut_chart .doughnut_content input {
+      border: none;
+      background-color: #e8e8e8;
+      height: 1.25rem;
+      padding: 0.9375rem;
+      margin-top: 0.625rem; }
+      @media (min-width: 768px) {
+        .doughnut_chart .doughnut_content input {
+          margin-top: 0;
+          width: 20vw; } }
+      @media (min-width: 1200px) {
+        .doughnut_chart .doughnut_content input {
+          width: 12vw; } }
+    .doughnut_chart .doughnut_content button {
+      width: 50vw;
+      margin-top: 2.5rem;
+      box-shadow: none; }
+      @media (min-width: 768px) {
+        .doughnut_chart .doughnut_content button {
+          width: 20vw;
+          margin-top: 1.25rem; } }
+
+.bar_chart {
+  display: block;
+  margin-top: 1.875rem; }
+  @media (min-width: 768px) {
+    .bar_chart {
+      width: 70vw;
+      margin-left: 23vw;
+      margin-right: 0; } }
+  .bar_chart .bar_size {
+    margin-bottom: 3.125rem;
+    width: 76vw;
+    padding-bottom: 1.25rem;
+    margin-left: -0.15625rem;
+    background-color: #fff;
+    border: 0.0625rem solid #434343; }
+    @media (min-width: 768px) {
+      .bar_chart .bar_size {
+        width: 67vw; } }
+    @media (min-width: 1200px) {
+      .bar_chart .bar_size {
+        width: 66vw;
+        height: 31.25rem; } }
+
 /*# sourceMappingURL=app.css.map */
