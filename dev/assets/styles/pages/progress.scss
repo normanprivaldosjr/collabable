@@ -1,0 +1,148 @@
+.doughnut_chart{
+	display: block;
+	margin-top: rem(30);
+
+	@include tablet{  
+	    width: 70vw;
+	    margin-left: 23vw;
+	    margin-right: 0;	
+	}
+
+	@include desktop{
+		margin-top: 0;
+		display: flex;
+		padding: rem(20);
+		margin-left: 20vw;
+	}
+
+	.doughnut_size{
+		width: 76vw;
+		padding-bottom: rem(20);
+		margin-left: rem(-2.5);
+		background-color: $color-white;
+		border: rem(1) solid $color-dark-grey-sidebar;	
+		
+		@include tablet{
+			width: 67vw; 
+		}
+
+		@include desktop{
+			width: 70vw;
+			margin: auto;
+		}
+	}	
+
+	.doughnut_content{
+	  font-size: rem(13);
+	  display: block;
+	  width: 60vw;
+	  background-color: $color-white;
+	  border: 3px solid $color-grey-box;
+	  padding: rem(20);
+	  font-family: $font-montserrat;
+	  box-shadow: rem(15) rem(10) $color-red-button;
+	  margin-top: rem(30);
+
+	  @include tablet{  
+	    width: 54vw;
+	    padding: rem(40);
+	  }
+
+	  @include desktop{
+	  	padding: rem(30);
+	  	margin-top: 0;
+	    margin-left: rem(40);
+	  }
+
+	  p{
+	  	color: $color-black;
+	  	margin-top: rem(30);
+	  }
+
+	  .delayed_container{
+	  	margin-top: rem(30);
+	  	display: block;
+
+	  	@include tablet{
+	  		display: flex;
+	  	}
+
+	  	input{
+	  		display: flex;
+	  		margin-left: rem(20);
+	  		flex:1;
+	  		width: 80%;
+
+	  		@include tablet{
+	  			width: rem(30);
+	  		}
+
+	  		@include desktop{
+		  		width: rem(50);	
+	  		}
+	  	}
+	  }
+
+	  input{
+	    border: none;
+	    background-color: $color-grey-input;
+	    height: rem(20);
+	    padding: rem(15);
+	    margin-top: rem(10);
+
+	    @include tablet{
+	    	margin-top: 0;
+		    width: 20vw;
+	    }
+
+	    @include desktop{
+	        width: 12vw;
+
+	    }
+	  }
+
+	  button{
+	  	width: 50vw;
+	  	margin-top: rem(40);
+	  	box-shadow: none;
+
+	  	@include tablet{
+	  		width: 20vw;
+	  		margin-top: rem(20);
+	  	}
+	  }
+	}
+
+}
+
+.bar_chart{
+	display: block;
+	margin-top: rem(30);
+
+	@include tablet{  
+	    width: 70vw;
+	    margin-left: 23vw;
+	    margin-right: 0;	
+	}
+
+	.bar_size{
+	    margin-bottom: rem(50);
+		width: 76vw;
+		padding-bottom: rem(20);
+		margin-left: rem(-2.5);
+		background-color: $color-white;
+		border: rem(1) solid $color-dark-grey-sidebar;	
+		
+		@include tablet{
+			width: 67vw; 
+		}
+
+		@include desktop{
+			width: 66vw;
+			height: rem(500);
+		}
+	}
+
+}
+
+
