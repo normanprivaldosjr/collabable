@@ -76,16 +76,21 @@ require "createProjectController.php";
                 <h4>Title</h4>
                 <input type="text" name="closed-project_title" id="closed-project_title" value="" readonly>
 
-                <h4>Description</h4>
-                <textarea class="closed-project_description" name="closed-project_description" readonly></textarea>
-
-                <h4>Lessons Learned</h4>
-                <textarea class="closed-project_lessons" name="closed-project_lessons" readonly></textarea>
+                <div id="user_closed">
+                    <h4 id="user_closed-header">Project Closed by</h4>
+                    <input type="text" name="closed-project_user" id="closed-project_user" value="" readonly>
+                </div>
 
                 <div id="date_closed">
                     <h4 id="date_closed-header">Date Closed</h4>
                     <input type="date" name="closed-project_date" id="closed-project_date" value="" readonly>
                 </div>
+
+                <h4>Description</h4>
+                <textarea class="closed-project_description" name="closed-project_description" readonly></textarea>
+
+                <h4>Lessons Learned</h4>
+                <textarea class="closed-project_lessons" name="closed-project_lessons" readonly></textarea>
 
                 <h4>Members</h4>
                 <table id="example" class="display" cellspacing="0" width="100%">
@@ -94,15 +99,6 @@ require "createProjectController.php";
                         <th style="width: 40vw;">Name</th>
                     </thead>
                     <tbody>
-                                        <!-- <tr>
-                        <td><input type="checkbox"style="width: 4.3vw;"></td>
-                        <td>Corinne Reloj</td>
-                    </tr>                    
-                    <tr>
-                        <td><input type="checkbox"style="width: 4.3vw;"></td>
-                        <td>Aloy Chua</td>
-                    </tr>
-                     -->
                     <?php
 
                     require_once "config.php";

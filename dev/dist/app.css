@@ -538,7 +538,7 @@ main {
   width: 60vw;
   border: none;
   background-color: #e8e8e8;
-  height: 7.5rem;
+  height: 9.375rem;
   padding: 0.9375rem;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.8125rem;
@@ -623,15 +623,17 @@ main {
         margin-left: 0.625rem;
         width: 17vw; } }
 
-#date_closed {
-  margin-bottom: 2.5rem; }
+#date_closed, #user_closed {
+  margin-top: 0.9375rem; }
   @media (min-width: 768px) {
-    #date_closed {
-      display: flex;
-      margin-bottom: 1.875rem; } }
+    #date_closed, #user_closed {
+      display: flex; } }
   @media (min-width: 768px) {
-    #date_closed #date_closed-header {
+    #date_closed #date_closed-header, #date_closed #user_closed-header, #user_closed #date_closed-header, #user_closed #user_closed-header {
       width: 37%; } }
+
+#date_closed {
+  margin-bottom: 1.25rem; }
 
 .users_table {
   background-color: #fff;
@@ -865,5 +867,16 @@ main {
       .bar_chart .bar_size {
         width: 66vw;
         height: 31.25rem; } }
+
+.agreements {
+  display: inline-flex;
+  margin-top: 0.9375rem;
+  margin-bottom: 0; }
+  .agreements input {
+    width: 2.1875rem; }
+  .agreements h4 {
+    margin-top: 0;
+    margin-left: 4vw;
+    width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
