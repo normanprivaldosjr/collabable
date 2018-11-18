@@ -707,6 +707,8 @@ main {
     .users_table {
       padding: 1.25rem;
       margin-left: 20vw; } }
+  .users_table .add_user {
+    margin-top: 3.125rem; }
 
 .update_content {
   display: block;
