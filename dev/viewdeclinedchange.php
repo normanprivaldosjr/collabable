@@ -81,7 +81,10 @@ require "createProjectController.php";
         </div>
 
         <form method="POST">
-            <div class="profile_content approval_content">
+            <div class="form_title declined_title">
+                Declined Change Request
+            </div>
+            <div class="form_content approval_content">
                 <h4>Title</h4>
                 <input type="text" name="closed-project_title" id="closed-project_title" value="" readonly>
 

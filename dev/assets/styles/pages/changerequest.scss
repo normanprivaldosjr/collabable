@@ -1,19 +1,39 @@
 .change_requests{
 
-  .request_form{
+  margin-left: rem(-40);
 
+  @include tablet{
+    margin-left: 15vw;
+  }
+
+  @include desktop{
+    margin-left: 19vw;
+  }
+
+  .wrapper > #first-tab-group{
+      background-color: $color-white;
+      width: 77vw;
+
+      @include tablet{
+        width: 68vw;
+      }
+
+      @include desktop{
+        width: 60vw;
+      }
+    }
+
+  .request_form{
     .view_button{
       display: block;
-      width: 60vw;
       background-color: $color-grey-button;
-      border: 3px solid $color-grey-border;
-      padding: rem(20);
+      border: rem(3) solid $color-grey-border;
+      padding: rem(8);
       font-family: $font-montserrat;
       font-size: rem(14);
       margin-bottom: rem(40);
       text-align: left;
       border-top: none;
-      height: rem(15);
       text-align: center;
 
       h4{
@@ -21,8 +41,6 @@
       }
 
       @include tablet{  
-        width: 48vw;
-        margin-left: 30vw;
         height: rem(20);
         padding: rem(10) rem(30);
 
@@ -36,24 +54,85 @@
       margin-bottom: 0;
       padding-top: rem(10);
       padding-bottom: rem(10);
-
-      @include tablet{
-        width: 48vw;
-        margin-left: 30vw;
-      }
+      display: block;
+      background-color: $color-white;
+      border: 3px solid $color-grey-border;
+      font-family: $font-montserrat;
     }
 
     .request_title{
       margin-top: 0; 
+      display: block;
+      border: 3px solid $color-grey-border;
+      border-bottom: none;
+      padding: rem(10);
+      font-family: $font-montserrat;
+      margin-bottom: 0;
+      text-align: left;
+      color: $color-white;
+      font-weight: bold;
 
       @include tablet{
-        width: 48vw;
-        margin-left: 30vw;
         padding-top: rem(10);
         padding-bottom: rem(10);
       }
     }
   }
+
+  .wrapper {
+    margin: 30px auto;
+    width: 80%;
+    font-family: sans-serif;
+    color: #555;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h1 + p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  .tabs li {
+    float: left;
+    width: 25.2vw;
+    max-width: rem(117.5);
+  }
+  .tabs a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888;
+    padding: rem(10) rem(2);
+    border-bottom: rem(2) solid #888;
+    background: $color-grey-cr-tab;
+    font-weight: bold;
+  }
+  .tabs a:hover,
+  .tabs a.active {
+    background: $color-grey-active-tab;
+    color: $color-white;
+  }
+  .tabgroup div {
+    padding: rem(15);
+    border: rem(2) solid $color-grey-border;
+
+    @include tablet{
+      padding: rem(25);
+    }
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 }
 
@@ -212,6 +291,10 @@
     margin-left: 5vw;
     width: 30vw;
   }
+
+  @include desktop{
+    margin-left: 10vw;
+  }
 }
 
 .back_button{
@@ -222,4 +305,20 @@
   @include desktop{
     margin-left: 15vw;
   }
+}
+
+.declined_title, .approved_title, .pending_title{
+  margin-top: 0;
+}
+
+.declined_title, .declined_card{
+  background-color: $color-black;
+}
+
+.pending_title, .pending_card{
+  background-color: $color-grey-pending;
+}
+
+.approved_card{
+    background-color: $color-red-button;
 }

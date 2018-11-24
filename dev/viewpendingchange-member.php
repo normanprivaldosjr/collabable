@@ -77,11 +77,14 @@ require "createProjectController.php";
 
         <div class="project_header">
             <h2 class="module_title">Change Requests</h2>
-            <a href=""><button class="default_button page_button back_button" >Go Back</button></a>
+            <a href=""><button class="default_button page_button back_button">Go Back</button></a>
         </div>
 
         <form method="POST">
-            <div class="profile_content approval_content">
+            <div class="form_title pending_title">
+                Pending Change Request
+            </div>
+            <div class="form_content approval_content">
                 <h4>Title</h4>
                 <input type="text" name="closed-project_title" id="closed-project_title" value="" readonly>
 
@@ -102,11 +105,6 @@ require "createProjectController.php";
                 <div class="file_link">
                     <h4 class="file">Draft1.docx</h4>
                     <button class="file_download">download file</button>
-                </div>
-                <div class="form_buttons">
-                    <button class="cancel_project">Decline</button>
-
-                    <button class="create_project" type="submit" id="submit" name="submit">Approve</button>
                 </div>
             </div>
         </form>

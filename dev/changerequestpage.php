@@ -11,6 +11,8 @@
     <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -76,38 +78,83 @@
         </div>
 
         <div class="change_requests">
-            <div class="request_form">
-                <div class="form_title request_title">
-                    [Change Request Title]
-                </div>
-                <div class="form_content request_content">
-                    <h4>Created by: @aloychua</h4>
-                    <h4>Date Created: 11/21/2018</h4>             
-                </div>
-                <div class="view_button">
-                    <a href=""><h4>View</h4></a>
-                </div>
-            </div>
+            <div class="wrapper">
+                <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                    <li>
+                        <a href="#tab1" class="active">Pending</a>
+                    </li>
+                    <li>
+                        <a href="#tab2">Approved</a>
+                    </li>
+                      <li>
+                        <a href="#tab3">Declined</a>
+                    </li>
+                </ul>
 
-            <div class="request_form">
-                <div class="form_title request_title">
-                    [Change Request Title]
-                </div>
-                <div class="form_content request_content">
-                    <h4>Created by: @aloychua</h4>
-                    <h4>Date Created: 11/21/2018</h4>             
-                </div>
-                <div class="view_button">
-                    <a href=""><h4>View</h4></a>
-                </div>
+                <section id="first-tab-group" class="tabgroup">
+                  <div id="tab1">
+                    <div class="request_form" style="border:none; padding: 0;">
+                        <div class="request_title pending_card">
+                        [Change Request Title]
+                        </div>
+                        <div class="request_content">
+                            <h4>Created by: @aloychua</h4>
+                            <h4>Date Created: 11/21/2018</h4>         
+                        </div>
+                        <div class="view_button">
+                            <a href=""><h4>View</h4></a>
+                        </div>
+                    </div>
+
+                    <div class="request_form" style="border:none; padding: 0;">
+                        <div class="request_title pending_card">
+                        [Change Request Title]
+                        </div>
+                        <div class="request_content">
+                            <h4>Created by: @aloychua</h4>
+                            <h4>Date Created: 11/21/2018</h4>         
+                        </div>
+                        <div class="view_button">
+                            <a href=""><h4>View</h4></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="tab2">
+                    <div class="request_form" style="border:none; padding: 0;">
+                        <div class="request_title approved_card">
+                        [Change Request Title]
+                        </div>
+                        <div class="request_content">
+                            <h4>Created by: @aloychua</h4>
+                            <h4>Date Created: 11/21/2018</h4>         
+                        </div>
+                        <div class="view_button">
+                            <a href=""><h4>View</h4></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="tab3">
+                    <div class="request_form" style="border:none; padding: 0;">
+                        <div class="request_title declined_card">
+                        [Change Request Title]
+                        </div>
+                        <div class="request_content">
+                            <h4>Created by: @aloychua</h4>
+                            <h4>Date Created: 11/21/2018</h4>         
+                        </div>
+                        <div class="view_button">
+                            <a href=""><h4>View</h4></a>
+                        </div>
+                    </div>
+                </section>
             </div>
-            
         </div>
 
     </div>
 </main>
 
 <script src="assets/scripts/sidebar.js"></script>
+<script src="assets/scripts/tabs.js"></script>
 
 </body>
 </html>

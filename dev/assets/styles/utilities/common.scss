@@ -148,6 +148,7 @@ footer{
   position: fixed;
   left: rem(-261);
   z-index: 10;
+  font-family: $font-default;
 
   @include tablet{
     width: 25%;
@@ -200,6 +201,7 @@ footer{
     color: $color-white;
     font-size: rem(18);
     text-transform: uppercase;  
+    font-weight: bold;
   }
   
 }
@@ -226,15 +228,18 @@ footer{
   @include tablet{
     display: none;
   }
+
+  span{
+    height: rem(6);
+    width: rem(34);
+    margin-bottom: rem(3);
+    margin: rem(3);
+    background-color: $color-dark-grey-sidebar;
+    display: block;
+  }
 }
 
-span{
-  height: rem(6);
-  width: rem(34);
-  margin: rem(3);
-  background-color: $color-dark-grey-sidebar;
-  display: block;
-}
+
 
 .module_title{
   letter-spacing: rem(12);
